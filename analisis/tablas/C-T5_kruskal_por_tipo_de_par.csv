@@ -1,5 +1,5 @@
 ﻿variable,N,k_grupos,H,valor_p,epsilon_cuadrado
-abs_log_radius_ratio,898,3,380.6944,2.15e-83,0.4231
-log_period_ratio,898,3,30.9416,1.91e-07,0.0323
-st_met,898,3,12.0952,0.00236,0.0113
-st_mass,898,3,22.6491,1.21e-05,0.0231
+abs_log_radius_ratio,898,3,380.6944,2.15e-83,0.4244
+log_period_ratio,898,3,30.9416,1.91e-07,0.0345
+st_met,898,3,12.0952,0.00236,0.0135
+st_mass,898,3,22.6491,1.21e-05,0.0252

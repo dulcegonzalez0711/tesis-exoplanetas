@@ -1,8 +1,6 @@
-# Orden de tablas y figuras en el capítulo de resultados
+# Orden de tablas y figuras
 
-Generado por el notebook 09 a partir de `tablas/INDICE_TABLAS.csv` y `figuras/INDICE_FIGURAS.csv`.
-Dentro de cada sección, los elementos aparecen en el orden en que conviene presentarlos.
-Cada tabla tiene además su versión en LaTeX en `tablas/latex/` y cada figura, su versión en PDF.
+Lo genera el notebook 09.
 
 ## 6.1.1 Catálogo general y disponibilidad de parámetros
 

@@ -1,16 +1,7 @@
-"""Funciones compartidas por los notebooks del trabajo.
+"""Funciones que usan los notebooks 01-09.
 
-El archivo tiene cinco partes, en este orden:
-
-    1. CONFIGURACIÓN   rutas de las carpetas, constantes, umbrales y etiquetas
-    2. DATOS           cargar y limpiar el catálogo; armar la muestra de cada análisis
-    3. ESTADÍSTICA     pruebas no paramétricas y resúmenes descriptivos
-    4. MODELOS         ajustar, comparar y validar los modelos de regresión
-    5. TABLAS Y FIGURAS  estilo de las figuras; guardar tablas y figuras
-
-Si se cambia algo aquí (por ejemplo, un umbral de la parte 1), hay que
-reiniciar el kernel del notebook y volver a ejecutarlo para que el cambio
-tenga efecto.
+Partes: 1 configuración, 2 datos y muestras, 3 estadística, 4 modelos,
+5 tablas y figuras. Después de cambiar algo aquí hay que reiniciar el kernel.
 """
 import re
 from dataclasses import dataclass, field
@@ -28,13 +19,9 @@ from scipy.special import expit
 from sklearn.metrics import roc_auc_score
 
 
-
 # ============================================================================
 # 1. CONFIGURACIÓN
 # ============================================================================
-# Rutas, constantes, umbrales y etiquetas que usan todos los notebooks.
-# Si se cambia un umbral, se cambia aquí y se vuelven a ejecutar los
-# notebooks en orden.
 
 # ----------------------------------------------------------------------------
 # Rutas
@@ -213,11 +200,6 @@ SIMBOLO = {   # identificador de variable -> símbolo para tablas en LaTeX
 # ============================================================================
 # 2. DATOS
 # ============================================================================
-# Carga del catálogo, limpieza, parámetros derivados y construcción de las
-# submuestras de cada análisis.
-#
-# Cada muestra se define en una única función. Los notebooks solo las llaman,
-# de modo que el mismo criterio se aplica siempre igual.
 
 # ----------------------------------------------------------------------------
 # 2.1 Catálogo: carga y limpieza
@@ -564,7 +546,6 @@ def construir_pares(planetas, limite_tipo=R_VALLE_MIN):
 # ============================================================================
 # 3. ESTADÍSTICA
 # ============================================================================
-# Pruebas no paramétricas y resúmenes descriptivos usados en la tesis.
 
 def resumen_por_grupo(datos, grupo, variable, orden=None):
     """N, mediana, cuartiles, IQR, mínimo y máximo de `variable` por grupo."""
@@ -651,13 +632,14 @@ def holm(valores_p):
 def kruskal_posthoc(datos, grupo, variable, orden):
     """Kruskal-Wallis global y comparaciones por pares (Mann-Whitney + Holm).
 
+    Tamaño de efecto: epsilon^2 = H / (n - 1) (Tomczak y Tomczak 2014).
     Devuelve (tabla global, tabla por pares).
     """
     muestras = {g: datos.loc[datos[grupo] == g, variable].dropna() for g in orden}
     h, p = stats.kruskal(*muestras.values())
     n, k = sum(len(m) for m in muestras.values()), len(muestras)
     tabla_global = pd.DataFrame([{"variable": variable, "grupo": grupo, "N": n, "k_grupos": k,
-                                  "H": h, "valor_p": p, "epsilon_cuadrado": (h - k + 1) / (n - k)}])
+                                  "H": h, "valor_p": p, "epsilon_cuadrado": h / (n - 1)}])
     filas = []
     for a, b in combinations(orden, 2):
         r = mann_whitney(muestras[a], muestras[b])
@@ -671,14 +653,8 @@ def kruskal_posthoc(datos, grupo, variable, orden):
 # ============================================================================
 # 4. MODELOS
 # ============================================================================
-# Ajuste, comparación y validación de modelos: estandarizar predictores, ajustar un modelo, armar la tabla de coeficientes
-# con IC 95 %, calcular las métricas, comparar modelos anidados y hacer la
-# validación cruzada agrupada por estrella.
-#
-# Los modelos se ajustan con `statsmodels` (Logit, OLS, MNLogit). De
-# `statsmodels` solo se toman los coeficientes y su matriz de covarianza; las
-# métricas (AIC, BIC, pseudo-R2, log-loss, ...) se calculan aquí con fórmulas
-# explícitas, para que cada número de la tesis tenga una definición única.
+# De statsmodels solo se usan los coeficientes y la covarianza; AIC, BIC,
+# pseudo-R2, log-loss, etc. se calculan en la clase Ajuste.
 
 Z95 = stats.norm.ppf(0.975)
 
@@ -1109,17 +1085,8 @@ def validacion_cruzada(datos, respuesta, tipo, constructores,
 # ============================================================================
 # 5. TABLAS Y FIGURAS
 # ============================================================================
-# Guardado de tablas y figuras con formato y nomenclatura únicos.
-#
-# Cada tabla o figura que va a la tesis se guarda con `guardar_tabla` o
-# `guardar_figura`. Ambas funciones:
-#
-#   * nombran el archivo con un código que indica el análisis y el orden
-#     (por ejemplo `A1-T3_...` = Análisis I, tabla 3);
-#   * escriben la tabla en CSV y en LaTeX (carpeta `tablas/latex`), y la
-#     figura en PNG (300 ppp) y PDF;
-#   * registran título, sección de la tesis y destino (texto principal o
-#     anexo) en `tablas/INDICE_TABLAS.csv` y `figuras/INDICE_FIGURAS.csv`.
+# guardar_tabla y guardar_figura guardan con el código (p. ej. A1-T3 = análisis I,
+# tabla 3) y lo anotan en tablas/INDICE_TABLAS.csv o figuras/INDICE_FIGURAS.csv.
 
 # ----------------------------------------------------------------------------
 # Paleta y estilo de las figuras
@@ -1427,10 +1394,7 @@ def escribir_orden_de_resultados():
     tablas = pd.read_csv(TABLAS / "INDICE_TABLAS.csv").assign(tipo="Tabla", carpeta="tablas")
     figuras = pd.read_csv(FIGURAS / "INDICE_FIGURAS.csv").assign(tipo="Figura", carpeta="figuras")
     indice = pd.concat([tablas, figuras], ignore_index=True).set_index("codigo")
-    lineas = ["# Orden de tablas y figuras en el capítulo de resultados", "",
-              "Generado por el notebook 09 a partir de `tablas/INDICE_TABLAS.csv` y `figuras/INDICE_FIGURAS.csv`.",
-              "Dentro de cada sección, los elementos aparecen en el orden en que conviene presentarlos.",
-              "Cada tabla tiene además su versión en LaTeX en `tablas/latex/` y cada figura, su versión en PDF.", ""]
+    lineas = ["# Orden de tablas y figuras", "", "Lo genera el notebook 09.", ""]
     ubicados = set()
     for seccion, codigos in ORDEN_PRESENTACION:
         presentes = [c for c in codigos if c in indice.index]
