@@ -1,0 +1,21 @@
+% Tabla A1-T8. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Análisis I: verificación con el radio como variable continua. Respuesta: logaritmo del radio planetario.}
+    \label{tab:A1-T8}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{llrrrrrrrrrr}
+    \toprule
+    Modelo & Predictores & $N_{\rm pl}$ & $R^2$ & $R^2_{\rm aj}$ & AIC & BIC & RMSE & MAE & $\Delta R^2$ & $\Delta$AIC & $\Delta$RMSE \\
+    \midrule
+    C0 & s(logP\_z) & 4\,461 & 0.066 & 0.065 & 3350.9 & 3389.3 & 0.352 & 0.278 & +0.0000 & +0.0 & +0.0000 \\
+    C1 & $s($$\log P$$)$ + $M_\star$ + {[Fe/H]} & 4\,461 & 0.227 & 0.226 & 2507.3 & 2558.5 & 0.320 & 0.254 & +0.1617 & -843.6 & -0.0319 \\
+    C2 & $s($$\log P$$)$ + $s($$M_\star$$)$ + $s(${[Fe/H]}$)$ & 4\,461 & 0.265 & 0.262 & 2299.8 & 2389.4 & 0.312 & 0.243 & +0.1988 & -1051.1 & -0.0397 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} s() denota un spline cúbico. Coeficientes estandarizados en C1 (IC 95 \%, errores agrupados por estrella): st\_mass\_z: 0.123 [0.112, 0.133]; st\_met\_z: 0.055 [0.043, 0.067].}
+\end{table}

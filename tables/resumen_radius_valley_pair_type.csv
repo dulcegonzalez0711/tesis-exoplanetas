@@ -1,0 +1,6 @@
+resultado,valor
+N por tipo de par,"rocky_pair = 132, volatile_pair = 496, mixed_pair = 270"
+Diferencia global en U_R,"Kruskal-Wallis H = 380.69, p < 0.001"
+Post-hoc U_R,Los tres grupos difieren significativamente; mixed_pair tiene la mayor desigualdad
+Modelo con pair_type,"log_period_ratio sigue significativo: coef = 0.033, IC95% = [0.013, 0.054], p = 0.002"
+Conclusión,"El tipo de par explica gran parte de U_R, pero la señal spacing–uniformidad persiste"

@@ -1,0 +1,22 @@
+% Tabla A3-T4. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Análisis III: asociación bivariada de la masa estelar y la metalicidad con el espaciamiento orbital y con la condición gapped.}
+    \label{tab:A3-T4}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lllrrrrrr}
+    \toprule
+    Predictor & Respuesta & Prueba & $N$ & Estadístico & IC 95\,\% inf. & IC 95\,\% sup. & Dif. medianas & $p$ \\
+    \midrule
+    $M_\star$ & median\_period\_ratio & Spearman & 615 & -0.110 & -0.187 & -0.030 & -- & 0.006 \\
+    $M_\star$ & gapped & Mann-Whitney & 615 & -0.164 & -- & -- & -0.036 & 0.015 \\
+    {[Fe/H]} & median\_period\_ratio & Spearman & 615 & 0.024 & -0.054 & 0.101 & -- & 0.558 \\
+    {[Fe/H]} & gapped & Mann-Whitney & 615 & 0.065 & -- & -- & 0.016 & 0.335 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} Estadístico: rho de Spearman (IC 95 \% por bootstrap, 5000 remuestreos) o correlación biserial por rangos, positiva si los sistemas gapped tienen valores mayores. Diferencia de medianas: gapped menos no gapped.}
+\end{table}

@@ -1,0 +1,17 @@
+variable,unidad
+pl_orbper,días
+pl_orbsmax,au
+pl_orbeccen,adimensional
+pl_rade,radios terrestres
+pl_bmasse,masas terrestres
+pl_dens,g/cm^3
+pl_insol,flujo terrestre
+pl_eqt,K
+st_teff,K
+st_rad,radios solares
+st_mass,masas solares
+st_met,dex
+st_lum,log10(luminosidad solar)
+st_logg,log10(cm/s^2)
+st_age,Gyr
+sy_dist,pc

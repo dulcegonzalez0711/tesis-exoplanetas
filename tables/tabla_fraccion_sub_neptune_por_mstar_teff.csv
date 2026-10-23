@@ -1,0 +1,9 @@
+agrupacion,grupo,N_planetas,fraccion_sub_neptune,porcentaje_sub_neptune
+st_mass_bin,Mstar_Q1_baja,861,0.6469221835075494,64.69
+st_mass_bin,Mstar_Q2,838,0.7303102625298329,73.03
+st_mass_bin,Mstar_Q3,859,0.7811408614668219,78.11
+st_mass_bin,Mstar_Q4_alta,799,0.7634543178973717,76.35
+st_teff_bin,Teff_Q1_fria,841,0.6444708680142688,64.45
+st_teff_bin,Teff_Q2,841,0.7443519619500595,74.44
+st_teff_bin,Teff_Q3,837,0.7694145758661888,76.94
+st_teff_bin,Teff_Q4_caliente,838,0.7613365155131265,76.13

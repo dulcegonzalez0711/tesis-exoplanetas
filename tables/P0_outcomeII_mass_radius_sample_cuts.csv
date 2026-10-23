@@ -1,0 +1,8 @@
+sample,N_planets,N_hosts
+Mass + radius available,6250,4701
+No upper/lower limits,6061,4622
+True Mass only,2182,1804
++ Mstar,2176,1798
++ [Fe/H],1800,1438
++ F,1798,1436
+Small (1 < Rp < 4 Rearth),593,391

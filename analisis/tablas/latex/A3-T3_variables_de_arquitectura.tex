@@ -1,0 +1,28 @@
+% Tabla A3-T3. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Análisis III: definición y resumen de las variables de arquitectura calculadas para cada sistema.}
+    \label{tab:A3-T3}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lp{0.40\textwidth}rrrr}
+    \toprule
+    Variable & Definición & $N$ & Mediana & Mín. & Máx. \\
+    \midrule
+    median\_period\_ratio & Mediana de las razones de período de planetas adyacentes, P\_ext / P\_int. & 615 & 2.343 & 1.169 & 54.083 \\
+    max\_period\_ratio & Máxima razón de período entre planetas adyacentes. & 615 & 2.538 & 1.169 & 54.083 \\
+    gapped & 1 si alguna razón de período adyacente es mayor que 5. & 615 & 0.000 & 0.000 & 1.000 \\
+    period\_span & Razón entre el período máximo y el mínimo del sistema. & 615 & 3.231 & 1.169 & 111.8 \\
+    $\tilde{R}_p$ & Mediana de los radios planetarios del sistema. & 615 & 2.045 & 1.035 & 3.745 \\
+    median\_abs\_log\_radius\_ratio & Mediana de |ln(R\_ext / R\_int)| en pares adyacentes (desigualdad de tamaños). & 615 & 0.242 & 0.000 & 1.302 \\
+    outer\_larger\_fraction & Fracción de pares adyacentes en que el planeta exterior es mayor. & 615 & 1.000 & 0.000 & 1.000 \\
+    compactness\_proxy & (N\_planetas - 1) / ln(period\_span). & 615 & 1.178 & 0.251 & 6.387 \\
+    radius\_cv & Coeficiente de variación de los radios (solo sistemas con N $\geq$ 3). & 200 & 0.246 & 0.007 & 0.596 \\
+    std\_log\_period\_ratio & Desviación estándar de ln(P\_ext / P\_int) (solo N $\geq$ 3). & 200 & 0.180 & 0.001 & 1.997 \\
+    period\_ratio\_cv & Coeficiente de variación de las razones de período (solo N $\geq$ 3). & 200 & 0.178 & 0.001 & 1.256 \\
+    radius\_gradient & Pendiente de ln(Rp) frente a ln(P) dentro del sistema (solo N $\geq$ 3). & 200 & 0.182 & -0.529 & 0.843 \\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}

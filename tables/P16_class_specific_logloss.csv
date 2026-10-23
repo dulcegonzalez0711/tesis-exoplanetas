@@ -1,0 +1,6 @@
+radius_class,class_code,N_planets,logloss_B0,logloss_B1,delta_logloss_B1_minus_B0,improvement_logloss_B0_minus_B1,mean_trueclass_prob_B0,mean_trueclass_prob_B1,delta_mean_trueclass_prob
+supertierra,0,1080,1.3873,1.3277,-0.0596,0.0596,0.2568,0.2799,0.0232
+terrestre,1,514,1.9627,1.8263,-0.1364,0.1364,0.1625,0.2041,0.0416
+neptuniano,2,1937,0.7146,0.6995,-0.0151,0.0151,0.5195,0.5277,0.0082
+gigante_gaseoso,3,720,1.8571,1.6656,-0.1915,0.1915,0.1612,0.2371,0.0759
+mayor_que_jupiter,4,210,2.5603,1.4162,-1.1441,1.1441,0.0845,0.4042,0.3197

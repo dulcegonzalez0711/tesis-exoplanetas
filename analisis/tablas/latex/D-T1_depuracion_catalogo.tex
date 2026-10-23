@@ -1,0 +1,19 @@
+% Tabla D-T1. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Depuración del catálogo: número de planetas y de estrellas anfitrionas después de cada criterio.}
+    \label{tab:D-T1}
+    \small
+    \begin{tabular}{p{0.40\textwidth}rrr}
+    \toprule
+    Paso & $N_{\rm pl}$ & $N_\star$ & Excluidos \\
+    \midrule
+    Catálogo original (PSCompPars) & 6\,324 & 4\,738 & 0 \\
+    Sin planetas duplicados por nombre & 6\,324 & 4\,738 & 0 \\
+    Sin planetas controversiales (pl\_controv\_flag = 0) & 6\,267 & 4\,711 & 57 \\
+    \bottomrule
+    \end{tabular}
+    \par\smallskip
+    {\footnotesize\textit{Nota:} No se encontraron duplicados ni valores menores o iguales a cero en las variables físicas.}
+\end{table}

@@ -1,0 +1,4 @@
+﻿modelo,predictores,N_planetas,R2,R2_ajustado,AIC,BIC,RMSE,MAE,delta_R2,delta_AIC,delta_RMSE,delta_MAE
+M0,s(log_Rp),574,0.2703,0.2652,506.5126,528.2758,0.3729,0.2487,-0.0102,6.0692,0.0026,0.0035
+M1,s(log_Rp) + logF_z,574,0.2805,0.2741,500.4434,526.5592,0.3703,0.2452,0.0,0.0,0.0,0.0
+M2,s(log_Rp) + logF_z + st_mass_z + st_met_z,574,0.3048,0.2962,484.6935,519.5145,0.364,0.237,0.0243,-15.75,-0.0063,-0.0082

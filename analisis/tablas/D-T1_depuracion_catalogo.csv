@@ -1,0 +1,4 @@
+﻿paso,N_planetas,N_estrellas,N_excluidos
+Catálogo original (PSCompPars),6324,4738,0
+Sin planetas duplicados por nombre,6324,4738,0
+Sin planetas controversiales (pl_controv_flag = 0),6267,4711,57

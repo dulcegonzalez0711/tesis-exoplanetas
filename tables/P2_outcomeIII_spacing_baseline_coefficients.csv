@@ -1,0 +1,4 @@
+model,predictor,coef,IC95_low,IC95_high,p_value
+M0,const,0.4418,0.4219,0.4617,0.0
+M0,median_radius_z,0.0171,-0.0028,0.037,0.0927
+M0,N_planetas_z,-0.0665,-0.0864,-0.0465,0.0

@@ -1,0 +1,4 @@
+﻿modelo,log_loss_vc_media,log_loss_vc_desv,brier_vc_media,brier_vc_desv,delta_log_loss_vc,delta_brier_vc
+M0,0.5885,0.0165,0.199,0.0076,0.0,0.0
+M1,0.5229,0.0247,0.1743,0.0107,-0.0656,-0.0248
+M2,0.5155,0.029,0.1717,0.0121,-0.073,-0.0274

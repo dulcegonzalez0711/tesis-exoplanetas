@@ -1,0 +1,103 @@
+% ============================================================================
+% Capítulo 7. Discusión
+% Cita tablas y figuras del capítulo de resultados (versión reducida):
+%   tab:A1-T5, tab:Z-T8, tab:A2-T4, tab:A3-T6, tab:S-T1
+%   fig:A1-F2, fig:Z-F2, fig:Z-F3, fig:A3-F2, fig:S-F2
+% Claves bibliográficas: fischer2005, fulton2017 y howe2026 ya están en la
+% bibliografía de la tesis (sustituir por la clave que tengan en el .bib);
+% owen2017, gupta2020 y steffen2016 son nuevas (ver referencias_discusion.bib).
+% ============================================================================
+
+\chapter{Discusión}
+\label{cap:discusion}
+
+Los resultados permiten examinar cómo se relacionan la masa y la metalicidad de las estrellas anfitrionas con tres aspectos distintos de la diversidad exoplanetaria: el régimen de radio, la masa de planetas pequeños y la arquitectura observada de los sistemas multiplanetarios. La contribución de las variables estelares no fue uniforme entre respuestas ni entre clases planetarias. En esta discusión se interpretan primero las asociaciones de cada análisis y después se consideran sus diferencias, los sesgos de selección y el alcance de las inferencias.
+
+\section{Propiedades estelares y régimen de radio}
+\label{sec:dis-regimenes}
+
+El modelo multinomial mejoró al incorporar masa y metalicidad estelar, pero la reducción del log-loss dependió del régimen considerado (Figura~\ref{fig:A1-F2}). Este comportamiento es relevante para la pregunta central de la tesis: las propiedades de la anfitriona no aportaron una cantidad uniforme de información a lo largo de toda la escala de tamaños planetarios. La masa estelar produjo la mayor reducción observada en cuatro de los cinco regímenes, mientras que la metalicidad destacó en los gigantes gaseosos. Como estas comparaciones se calcularon en la muestra de ajuste, describen asociaciones de los planetas catalogados y requieren cautela al extenderse a otras poblaciones.
+
+\subsection{Metalicidad y planetas gigantes}
+\label{sec:dis-metalicidad-gigantes}
+
+La mayor contribución de la metalicidad a la clasificación de gigantes gaseosos es cualitativamente compatible con la conocida correlación entre metalicidad estelar y presencia de planetas gigantes. \textcite{fischer2005} encontraron que la fracción de estrellas con gigantes detectados aumenta hacia metalicidades altas. En el marco de la acreción de núcleos, una mayor disponibilidad de sólidos en el disco puede favorecer el crecimiento de núcleos capaces de acumular gas. Los datos de este trabajo son compatibles con esa interpretación, pero no permiten probar el mecanismo de formación.
+
+La comparación con ese estudio exige distinguir las preguntas estadísticas. Su resultado concierne a la frecuencia de estrellas que albergan gigantes dentro de una muestra de estrellas observadas; aquí se estima la probabilidad relativa de que un \emph{planeta ya detectado} pertenezca a un régimen de radio. Esta tesis no incluye un denominador de estrellas sin planetas detectados ni una corrección de completitud, por lo que no estima la tasa de ocurrencia de gigantes en función de la metalicidad.
+
+La metalicidad no produjo una reducción comparable del log-loss en la clase denominada «mayor que Júpiter», y su razón de riesgo relativo es compatible con uno (Tabla~\ref{tab:A1-T5}). Esto no demuestra que la metalicidad carezca de relación con esos objetos. La clase se definió por \emph{radio}, no por masa planetaria, y contiene solamente 210 planetas en la muestra multinomial. Por ello, agrupa objetos cuyo tamaño observado puede responder a procesos distintos de los que determinan su formación y ofrece menos información estadística que las clases más numerosas. La reducción particularmente grande asociada con la masa estelar en este grupo merece verificarse fuera de muestra antes de darle una interpretación física fuerte.
+
+\subsection{Masa estelar y tamaño planetario}
+\label{sec:dis-masa-estelar-tamano}
+
+La masa estelar fue el predictor que más redujo el log-loss en cuatro regímenes, aunque la magnitud de la mejora varió entre ellos. Una interpretación física posible es que la masa de la estrella se relacione con las condiciones del disco protoplanetario y con la historia de irradiación del sistema. Además, en planetas gigantes cercanos, la irradiación puede contribuir a aumentar el radio observado sin un aumento equivalente de masa planetaria; los planetas mayores que Júpiter de la muestra son, de hecho, de período muy corto (mediana de 3.3~días). El modelo multinomial, sin embargo, no permite separar estas vías: identifica una asociación entre masa estelar y régimen de radio después de considerar el período orbital.
+
+También existe una explicación observacional que debe permanecer abierta. La profundidad aproximada de un tránsito es $(R_p/R_\star)^2$; a radio planetario fijo, un tránsito es menos profundo frente a una estrella de mayor radio. Como masa y radio estelar se relacionan en buena parte de la muestra, la detectabilidad de planetas pequeños puede variar con $M_\star$. Haber restringido el análisis a tránsitos reduce la heterogeneidad entre métodos de descubrimiento, pero no elimina las diferencias de sensibilidad entre estrellas ni entre períodos. Por tanto, el predominio estadístico de la masa estelar no puede atribuirse por completo a la formación o evolución de los planetas.
+
+\section{Transición entre super-Tierras y sub-Neptunos}
+\label{sec:dis-transicion}
+
+\subsection{Irradiación y pérdida atmosférica}
+\label{sec:dis-irradiacion}
+
+La disminución observada de la fracción de sub-Neptunos hacia flujos incidentes mayores (Figura~\ref{fig:Z-F2}) es compatible con una población en la que algunos planetas cercanos a sus estrellas pierden parte de su envoltura gaseosa. La separación entre poblaciones de planetas pequeños recuerda la brecha de radios descrita por \textcite{fulton2017}. La fotoevaporación y la pérdida atmosférica impulsada por el enfriamiento del núcleo son dos mecanismos capaces de producir patrones de este tipo \parencite{owen2017,gupta2020}.
+
+Los modelos de este trabajo no distinguen entre esos mecanismos. Utilizan el flujo incidente actual y una clasificación por radio, pero no reconstruyen la irradiación de alta energía recibida durante la evolución del planeta, su masa inicial, su edad ni el contenido original de su envoltura. Además, excluir el intervalo de $1.6$--$2.0\,R_\oplus$ hizo más clara la comparación entre las dos categorías, pero impide describir con esta regresión la forma y la posición precisas de la propia brecha de radios.
+
+\subsection{Dependencia con la masa estelar}
+\label{sec:dis-interaccion}
+
+El modelo con interacción indicó que la relación entre flujo incidente y clasificación como sub-Neptuno depende de la masa estelar (Tabla~\ref{tab:Z-T8}; Figura~\ref{fig:Z-F3}). En la muestra analizada, a igual flujo, las probabilidades predichas de pertenecer al grupo subneptuniano fueron mayores para estrellas más masivas, y la disminución con el flujo fue más pronunciada alrededor de ellas. La interacción mejoró tanto el ajuste como las métricas de validación cruzada agrupada, de modo que aporta información adicional respecto al modelo de efectos aditivos.
+
+Esta dependencia puede reflejar diferencias en las condiciones iniciales de formación y en la evolución de las envolturas. El modelo de pérdida impulsada por el enfriamiento del núcleo, por ejemplo, predice que la brecha de radios se desplaza hacia tamaños mayores alrededor de estrellas más masivas \parencite{gupta2020}; con límites de radio fijos como los utilizados aquí, un desplazamiento de ese tipo modificaría la fracción clasificada como sub-Neptuno. La dependencia también puede recoger diferencias entre las estrellas y los planetas que entraron en la muestra detectable. La masa estelar está relacionada con otras propiedades, entre ellas luminosidad y radio estelar; fijar el flujo incidente en el modelo no equivale a igualar todas las condiciones físicas ni la sensibilidad de detección. Por ello, la interacción describe una diferencia observada entre grupos de anfitrionas, sin identificar por sí sola su mecanismo.
+
+Se eligió el flujo incidente como control principal porque representa de manera más directa el entorno radiativo actual del planeta que el período orbital por sí solo. No obstante, el flujo se calcula a partir de propiedades estelares y orbitales, mientras que el período está relacionado con la probabilidad de tránsito y con la cobertura temporal de las observaciones. Al intercambiar ambos controles, el modelo con el período ajustó algo mejor. Esa verificación debe leerse como una prueba de sensibilidad de la especificación y no como una comparación entre dos medidas equivalentes de una misma causa: ambas variables están fuertemente correlacionadas en la muestra, y la elección del flujo responde a su interpretación física.
+
+\section{Masa de los planetas pequeños a radio comparable}
+\label{sec:dis-masa}
+
+Después de representar de forma flexible la relación masa--radio y considerar el flujo incidente, la masa estelar mostró una asociación positiva y modesta con la masa planetaria (Tabla~\ref{tab:A2-T4}). El coeficiente de metalicidad, en cambio, fue compatible con cero. Esto indica que, entre los planetas pequeños con los parámetros requeridos, la masa de la anfitriona aportó información sobre diferencias de masa a radio comparable. El cambio en RMSE durante la validación cruzada fue pequeño; por ello, la asociación detectada no equivale a una mejora grande en la predicción de masas individuales.
+
+El coeficiente del flujo incidente, positivo en el modelo base, fue cercano a cero en el modelo que incluyó las propiedades estelares. Esto no implica que la irradiación sea físicamente irrelevante para la evolución de planetas pequeños. La respuesta fue masa planetaria \emph{condicionada al radio}, y el flujo incidente está relacionado con propiedades de la estrella y de la órbita incluidas directa o indirectamente en el análisis. El resultado indica únicamente que, bajo esta especificación y en esta muestra, el flujo no mostró una asociación adicional claramente distinguible de cero.
+
+La selección de la muestra limita esta interpretación. Solo entraron planetas pequeños con una masa verdadera disponible, un subconjunto mucho más reducido que el utilizado para clasificar regímenes de radio. Las masas obtenidas mediante velocidad radial y mediante variaciones en los tiempos de tránsito responden a sensibilidades distintas: a radio comparable, el seguimiento por velocidad radial tiende a favorecer masas mayores, mientras que la sensibilidad de las variaciones temporales es más uniforme pero depende de la configuración orbital \parencite{steffen2016}. En consecuencia, la relación condicional estimada para estos 574 planetas no debe extrapolarse sin más a todos los planetas pequeños detectados.
+
+\section{Arquitectura de los sistemas multiplanetarios}
+\label{sec:dis-arquitectura}
+
+En los sistemas multiplanetarios analizados, una mayor masa estelar se asoció con razones medianas de períodos adyacentes ligeramente menores (Tabla~\ref{tab:A3-T6}). La dirección del coeficiente sugiere sistemas observados algo más compactos alrededor de estrellas más masivas, después de considerar el radio mediano y la multiplicidad detectada, y se mantuvo al restringir la muestra a los sistemas observados por completo en tránsito. Sin embargo, el $R^2$ pasó solo de 0.070 a 0.093: las variables del modelo explican una parte pequeña de la variación del espaciamiento.
+
+\textcite{howe2026} también examinaron relaciones entre propiedades de las anfitrionas y arquitecturas planetarias, y encontraron que estas últimas no dependen de manera intensa de las propiedades estelares. La comparación es cualitativa: su clasificación de arquitecturas y las respuestas utilizadas aquí, el espaciamiento mediano y la presencia de una razón de períodos mayor que cinco, no son la misma medida. El resultado de esta tesis añade evidencia de una asociación débil bajo una definición concreta de arquitectura observada, sin establecer una correspondencia directa entre categorías de ambos estudios.
+
+En la clasificación \textit{gapped}, la masa estelar se asoció con menores momios de cumplir el umbral definido y la metalicidad con momios algo mayores (Figura~\ref{fig:A3-F2}). Estos coeficientes no autorizan a concluir que la masa estelar cierre separaciones orbitales ni que la metalicidad las produzca. Solo 85 de los 615 sistemas fueron clasificados como \textit{gapped}, el pseudo-$R^2$ del modelo estelar fue 0.039, el BIC no lo favorece frente al modelo base y ninguna de las dos asociaciones se distinguió de la ausencia de efecto en los sistemas observados por completo en tránsito. Ambas deben considerarse tentativas, más aún ante la cantidad de relaciones examinadas en la tesis.
+
+La arquitectura registrada puede diferir de la arquitectura real. Un planeta intermedio no detectado aumentaría artificialmente la razón de períodos entre los dos planetas que aparecen como adyacentes en el catálogo e incluso podría cambiar la clasificación \textit{gapped}. La multiplicidad utilizada como control es también la multiplicidad \emph{detectada}. Por ello, los resultados se refieren al ordenamiento de planetas conocidos y pueden cambiar cuando se complete el inventario de un sistema.
+
+\section{Comparación entre los tres niveles}
+\label{sec:dis-comparacion}
+
+El conjunto de resultados muestra una contribución estelar que depende de la respuesta estudiada (Tabla~\ref{tab:S-T1}; Figura~\ref{fig:S-F2}). En los regímenes de radio, la incorporación de masa y metalicidad produjo una mejora marcada del ajuste multinomial, con diferencias entre clases. En el análisis de super-Tierras y sub-Neptunos, la contribución estelar y la interacción con el flujo mejoraron las métricas fuera de muestra. En la masa planetaria también persistió una mejora de validación cruzada, pero de menor magnitud. Para la arquitectura se detectaron asociaciones en la muestra de ajuste cuya capacidad de generalización todavía no quedó establecida.
+
+La masa estelar fue el predictor más consistente a través de las respuestas examinadas: apareció en las diferencias entre regímenes, en la transición entre super-Tierras y sub-Neptunos, en la masa planetaria condicionada por radio y en el espaciamiento orbital. La metalicidad tuvo un papel más específico, especialmente en los gigantes gaseosos; fue compatible con cero en el modelo de masa de planetas pequeños y en el espaciamiento, y su asociación con los sistemas \textit{gapped}, igual que la de la masa estelar, no fue concluyente.
+
+Esta síntesis responde a la pregunta de la tesis en términos de \emph{información estadística condicionada a cada muestra y modelo}. No existe una escala única que permita comparar directamente el AIC, el $R^2$, el pseudo-$R^2$ o los coeficientes de respuestas tan distintas. Tampoco se aplicó la misma validación fuera de muestra a todos los análisis. Por ello, los resultados permiten identificar dónde aparecen asociaciones estelares más claras bajo las comparaciones realizadas, pero no cuantificar una jerarquía universal de influencia física entre tamaño, masa y arquitectura.
+
+\section{Limitaciones}
+\label{sec:dis-limitaciones}
+
+\subsection{Sesgos de detección y completitud}
+\label{sec:dis-sesgos}
+
+La muestra reúne planetas confirmados y está condicionada por las estrategias de observación que produjeron sus detecciones. La probabilidad de observar un tránsito depende de la geometría orbital y la señal medida depende, entre otros factores, de la razón $R_p/R_\star$; los planetas pequeños y de períodos largos no tienen la misma probabilidad de entrar en el catálogo que los grandes y cercanos. Aunque algunos análisis restringieron el método o examinaron submuestras de Kepler, no se aplicó una corrección conjunta por probabilidad de tránsito y eficiencia de detección. Por ello, las fracciones de clases y las asociaciones estimadas describen la población \emph{detectada}, no tasas de ocurrencia alrededor de todas las estrellas observadas.
+
+\subsection{Heterogeneidad del catálogo}
+\label{sec:dis-catalogo}
+
+Los parámetros del catálogo proceden de publicaciones y técnicas de medición diferentes. La disponibilidad de masa planetaria es especialmente selectiva, y parte de los radios y de las masas catalogados son estimaciones del archivo a partir de una relación masa--radio y no mediciones independientes. Los análisis~I y~II evitan esos valores al exigir planetas de tránsito y, en el segundo caso, masas verdaderas; en el análisis de arquitectura, en cambio, 73 de los 615 sistemas incluyen al menos un radio estimado. Asimismo, $[\mathrm{Fe/H}]$ y $[\mathrm{M/H}]$ no son definiciones idénticas de abundancia química: el catálogo reporta la primera para cerca del 89\,\% de los planetas con metalicidad y la segunda para cerca del 10\,\%, y aquí ambas se trataron como una sola variable. Como las incertidumbres individuales de los parámetros no se propagaron en los modelos, los intervalos de confianza presentados no incorporan la incertidumbre de medición ni las diferencias sistemáticas entre estudios.
+
+\subsection{Alcance estadístico}
+\label{sec:dis-alcance}
+
+Los modelos identifican asociaciones condicionales en un catálogo observacional; no estiman efectos causales. Los análisis comparten planetas, anfitrionas y criterios de selección, por lo que sus resultados tampoco constituyen tres confirmaciones independientes de una misma hipótesis. Además, el modelo multinomial general y los modelos de arquitectura se compararon dentro de la muestra de ajuste; sus mejoras deben distinguirse de las observadas en validación cruzada para el análisis de super-Tierras y sub-Neptunos y para la masa de planetas pequeños.
+
+La interpretación también depende de los intervalos de masa y metalicidad estelar representados en cada submuestra, que se concentran alrededor de los valores solares, de los controles elegidos y de los umbrales utilizados para clasificar planetas y sistemas. La ausencia de una asociación clara en un modelo no demuestra ausencia de un proceso físico, del mismo modo que una mejora estadística no identifica por sí sola el proceso que la produjo. El alcance de esta tesis es establecer qué información adicional aportan las propiedades estelares para las respuestas y poblaciones observadas, y señalar qué patrones requieren muestras más homogéneas y correcciones de selección para ponerse a prueba con mayor precisión.

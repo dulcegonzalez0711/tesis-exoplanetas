@@ -1,0 +1,3 @@
+modelo,formula,N,pseudo_R2,AIC,BIC,LLR_p_value
+sin_interaccion,sub_Neptune ~ logF + Mstar + [Fe/H],3357,0.1338,3401.0362,3425.5114,0.0
+con_interaccion,sub_Neptune ~ logF * Mstar + [Fe/H],3357,0.1458,3355.9554,3386.5494,0.0

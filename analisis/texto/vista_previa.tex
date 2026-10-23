@@ -1,0 +1,29 @@
+% Vista previa del capítulo de resultados, fuera de la plantilla de la tesis.
+% Sirve solo para leer el borrador con sus tablas y figuras; el formato final
+% lo da la plantilla. Se compila desde la carpeta analisis/texto:
+%     pdflatex vista_previa.tex   (dos veces)
+\documentclass[12pt,letterpaper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla,es-nodecimaldot]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\rutatablas}{../tablas/latex}
+\newcommand{\rutafiguras}{../figuras}
+
+\addto\captionsspanish{\renewcommand{\appendixname}{Anexo}}
+\setcounter{chapter}{5}
+
+\begin{document}
+
+\include{06_resultados}
+
+\appendix
+\include{anexo_tablas_y_figuras}
+
+\end{document}

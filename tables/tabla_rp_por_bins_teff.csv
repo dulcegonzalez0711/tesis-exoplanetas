@@ -1,0 +1,4 @@
+teff_bin_3,N_planetas,Teff_min,Teff_mediana,Teff_max,Rp_mediana,Rp_Q1,Rp_Q3,Rp_IQR,N_super_Earth,N_sub_Neptune,fraccion_super_Earth,fraccion_sub_Neptune,ratio_subN_superEarth
+Teff_fria,1121,2566.0,4486.0,5165.0,1.95,1.44,2.47,1.03,384,737,0.3426,0.6574,1.9193
+Teff_media,1118,5166.0,5513.0,5757.0,2.29,1.66,2.7788,1.1188,255,863,0.2281,0.7719,3.3843
+Teff_caliente,1118,5758.0,5989.0,8500.0,2.24,1.6208,2.83,1.2092,268,850,0.2397,0.7603,3.1716

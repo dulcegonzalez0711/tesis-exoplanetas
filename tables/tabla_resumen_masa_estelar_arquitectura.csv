@@ -1,0 +1,5 @@
+analisis,tipo_prueba,N,estadistico,p_value,interpretacion_breve
+st_mass_vs_median_period_ratio,Spearman,615,-0.11035730566378103,0.006151839022377332,correlacion negativa debil
+st_mass_vs_max_period_ratio,Spearman,615,-0.11715414256847893,0.0036207421407959107,correlacion negativa debil
+st_mass_vs_period_span,Spearman,615,-0.13846003126121006,0.0005746400186675041,correlacion negativa debil
+st_mass_gapped_0_vs_1,Mann-Whitney,615,-0.16368479467258612,0.015341497199699678,gapped tiene masa estelar mediana ligeramente menor

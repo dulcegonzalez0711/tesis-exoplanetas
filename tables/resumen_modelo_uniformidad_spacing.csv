@@ -1,0 +1,2 @@
+modelo,N,R2,R2_ajustado,F_p_value,AIC,BIC
+U_R ~ log_period_ratio + st_met + st_mass + pair_median_radius + N_planetas,898,0.05967257780995594,0.054401684187814325,1.3215582312676358e-10,-81.93368463369666,-53.13266422388346

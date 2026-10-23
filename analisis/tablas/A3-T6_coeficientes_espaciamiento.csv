@@ -1,0 +1,6 @@
+﻿modelo,predictor,coeficiente,error_estandar,IC95_inf,IC95_sup,valor_p
+S1,const,0.4418,0.01,0.4221,0.4615,1.32e-191
+S1,median_radius_z,0.0269,0.0105,0.0062,0.0476,0.0109
+S1,N_planetas_z,-0.067,0.01,-0.0868,-0.0473,5.62e-11
+S1,st_mass_z,-0.0426,0.0109,-0.064,-0.0212,0.000104
+S1,st_met_z,0.0147,0.0106,-0.0061,0.0355,0.166

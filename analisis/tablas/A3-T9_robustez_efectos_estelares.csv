@@ -1,0 +1,13 @@
+﻿muestra,N_sistemas,N_gapped,modelo,predictor,medida,efecto,IC95_inf,IC95_sup,valor_p
+Todos los sistemas (principal),615,85,S1,st_mass_z,coeficiente,-0.0426,-0.064,-0.0212,0.000104
+Todos los sistemas (principal),615,85,S1,st_met_z,coeficiente,0.0147,-0.0061,0.0355,0.166
+Todos los sistemas (principal),615,85,G1,st_mass_z,OR,0.7027,0.5525,0.8936,0.00401
+Todos los sistemas (principal),615,85,G1,st_met_z,OR,1.3035,1.0169,1.6708,0.0364
+Todos los planetas en tránsito,542,68,S1,st_mass_z,coeficiente,-0.0273,-0.0501,-0.0045,0.0192
+Todos los planetas en tránsito,542,68,S1,st_met_z,coeficiente,0.0136,-0.0087,0.0359,0.231
+Todos los planetas en tránsito,542,68,G1,st_mass_z,OR,0.8068,0.6162,1.0564,0.118
+Todos los planetas en tránsito,542,68,G1,st_met_z,OR,1.2384,0.9437,1.6251,0.123
+Sistemas de Kepler,389,45,S1,st_mass_z,coeficiente,-0.0248,-0.0489,-0.0007,0.044
+Sistemas de Kepler,389,45,S1,st_met_z,coeficiente,0.0172,-0.0065,0.041,0.154
+Sistemas de Kepler,389,45,G1,st_mass_z,OR,0.8212,0.5861,1.1505,0.252
+Sistemas de Kepler,389,45,G1,st_met_z,OR,1.3456,0.9622,1.8817,0.0828

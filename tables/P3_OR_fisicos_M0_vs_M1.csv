@@ -1,0 +1,5 @@
+modelo,predictor,escala,OR,IC95_OR_low,IC95_OR_high,p_value
+M0_common,logF,+1 dex en irradiación,0.4446,0.3806,0.5194,0.0
+M1,logF,+1 dex en irradiación,0.1795,0.1499,0.215,0.0
+M1,Mstar,+0.1 M_sun,1.5871,1.4974,1.6822,0.0
+M1,[Fe/H],+0.1 dex,1.0781,1.0125,1.1479,0.0188

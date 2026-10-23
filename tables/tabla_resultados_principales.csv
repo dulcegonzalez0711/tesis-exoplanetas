@@ -1,0 +1,11 @@
+bloque,pregunta,N,resultado_cuantitativo,interpretacion,estado
+Metalicidad y espaciamiento,[Fe/H] vs median_period_ratio,615,"Spearman rho = 0.024, p = 0.558; IC95% bootstrap = [-0.054, 0.101]",No hay evidencia de asociación entre metalicidad y espaciamiento orbital mediano.,cerrado
+Metalicidad y gaps,[Fe/H] entre sistemas gapped y non-gapped,615,Mann-Whitney p = 0.335; diferencia de medianas = 0.016 dex; rank-biserial = 0.065,No hay evidencia de diferencia clara de metalicidad entre sistemas con y sin huecos amplios.,cerrado
+Masa estelar y arquitectura,st_mass vs variables de arquitectura,615,rho = -0.110 a -0.138; p = 0.006 a 0.001,La masa estelar muestra una asociación negativa débil con el espaciamiento orbital.,cerrado
+Masa estelar y gaps,st_mass entre sistemas gapped y non-gapped,615,Mann-Whitney p = 0.015; diferencia de medianas = -0.036 M_sun; rank-biserial = -0.164,Los sistemas gapped tienden a orbitar estrellas ligeramente menos masivas; efecto pequeño.,cerrado
+Pares adyacentes,Separación orbital vs desigualdad de radios,898,"Spearman rho = 0.183, p < 0.001",Pares más separados orbitalmente tienden a tener planetas menos similares en tamaño.,cerrado
+Gapped y uniformidad,Desigualdad de radios en gapped vs non-gapped,898,Mann-Whitney p = 0.005; diferencia de medianas = 0.095; rank-biserial = 0.168,Los sistemas gapped presentan pares adyacentes más desiguales en radio.,cerrado
+Metalicidad y uniformidad,[Fe/H] vs median_abs_log_radius_ratio,615,"Spearman rho = 0.123, p = 0.002",Sistemas más metálicos tienden a tener planetas adyacentes ligeramente menos uniformes.,cerrado
+Metalicidad y uniformidad,[Fe/H] vs radius_cv en sistemas con N>=3,200,"Spearman rho = 0.170, p = 0.016","En sistemas con N>=3, mayor metalicidad se asocia con mayor dispersión relativa de radios.",cerrado
+Modelo multivariable spacing,log10(median_period_ratio) ~ [Fe/H] + st_mass + median_radius + N_planetas,615,"st_met: coef = 0.084, p = 0.166; R2 ajustado = 0.087",[Fe/H] no aporta información adicional relevante para explicar el espaciamiento al controlar por otras variables.,cerrado
+Modelo logístico gapped,gapped ~ [Fe/H] + st_mass + median_radius,615,"st_met: OR = 4.81, IC95% = [1.16, 19.90], p = 0.030; pseudo R2 = 0.021",[Fe/H] aparece asociado con gapped solo en el modelo controlado; resultado débil y con incertidumbre amplia.,cerrado

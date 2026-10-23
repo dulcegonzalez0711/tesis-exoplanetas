@@ -1,0 +1,17 @@
+﻿analisis,contraste,medida,predictor,efecto,IC95_inf,IC95_sup,valor_p
+I. Regímenes de radio,Terrestre vs super-Tierra,RRR,st_mass,0.8335,0.7399,0.9389,0.00273
+I. Regímenes de radio,Terrestre vs super-Tierra,RRR,st_met,0.8705,0.7809,0.9703,0.0123
+I. Regímenes de radio,Tipo Neptuno vs super-Tierra,RRR,st_mass,1.087,0.9895,1.1941,0.0818
+I. Regímenes de radio,Tipo Neptuno vs super-Tierra,RRR,st_met,1.258,1.1559,1.369,1.06e-07
+I. Regímenes de radio,Gigante gaseoso vs super-Tierra,RRR,st_mass,1.8602,1.6445,2.1042,5.66e-23
+I. Regímenes de radio,Gigante gaseoso vs super-Tierra,RRR,st_met,2.146,1.9153,2.4045,1.47e-39
+I. Regímenes de radio,Mayor que Júpiter vs super-Tierra,RRR,st_mass,8.8797,7.0077,11.2517,4.73e-73
+I. Regímenes de radio,Mayor que Júpiter vs super-Tierra,RRR,st_met,0.8853,0.717,1.0932,0.258
+I. Super-Tierras y sub-Neptunos,Sub-Neptuno vs super-Tierra,OR,st_mass,2.6713,2.3344,3.0569,2.77e-46
+I. Super-Tierras y sub-Neptunos,Sub-Neptuno vs super-Tierra,OR,st_met,1.1439,1.0293,1.2713,0.0126
+II. Propiedades físicas,log_Mp,coeficiente [dex],st_mass,0.076,0.0311,0.1209,0.000903
+II. Propiedades físicas,log_Mp,coeficiente [dex],st_met,0.03,-0.0083,0.0683,0.125
+III. Espaciamiento orbital,log_median_period_ratio,coeficiente [dex],st_mass,-0.0426,-0.064,-0.0212,0.000104
+III. Espaciamiento orbital,log_median_period_ratio,coeficiente [dex],st_met,0.0147,-0.0061,0.0355,0.166
+III. Sistemas gapped,Gapped vs no gapped,OR,st_mass,0.7027,0.5525,0.8936,0.00401
+III. Sistemas gapped,Gapped vs no gapped,OR,st_met,1.3035,1.0169,1.6708,0.0364

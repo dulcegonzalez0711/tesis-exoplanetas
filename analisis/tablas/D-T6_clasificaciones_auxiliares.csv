@@ -1,0 +1,16 @@
+﻿clasificacion,clase,criterio,N_planetas,porcentaje
+clase_masa,masa_terrestre,Mp < 2 M_Tierra,507,8.09
+clase_masa,supertierra_masa,2 <= Mp < 10,2741,43.74
+clase_masa,subneptuno_neptuno_masa,10 <= Mp < 50,950,15.16
+clase_masa,gigante_masa,50 <= Mp < 4000,1879,29.98
+clase_masa,muy_masivo,Mp >= 4000,164,2.62
+clase_masa,sin_dato,masa no disponible,26,0.41
+clase_periodo,USP,P < 1 d,159,2.54
+clase_periodo,periodo_corto,1 <= P < 10 d,2695,43.0
+clase_periodo,periodo_intermedio,10 <= P < 100 d,2100,33.51
+clase_periodo,periodo_largo,P >= 100 d,973,15.53
+clase_periodo,sin_dato,período no disponible,340,5.43
+indicador,es_pequeno,Rp < 2 R_Tierra,1759,28.07
+indicador,es_gigante,Rp >= 6 R_Tierra,2090,33.35
+indicador,es_hot_jupiter,Rp >= 6 R_Tierra y P < 10 d,792,12.64
+indicador,es_super_puff,Rp >= 4 R_Tierra y densidad < 0.3 g/cm^3,230,3.67

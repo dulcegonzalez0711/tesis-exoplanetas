@@ -1,0 +1,2 @@
+model,sample,N_planets,N_hosts,AIC,BIC,pseudo_R2_McFadden,log_loss
+P15 multinomial,Transit planets,4461,3390,10480.594,10583.0441,0.1592,1.1711

@@ -1,0 +1,5 @@
+﻿comparacion,unidad,prueba,N,estadistico,IC95_inf,IC95_sup,valor_p
+log_period_ratio vs abs_log_radius_ratio,par,Spearman,898,0.1826,0.1179,0.2464,3.59e-08
+st_met vs median_abs_log_radius_ratio,sistema,Spearman,615,0.1224,0.0443,0.1991,0.00237
+st_mass vs median_abs_log_radius_ratio,sistema,Spearman,615,0.0407,-0.0408,0.1217,0.314
+abs_log_radius_ratio: gapped vs no gapped,par,Mann-Whitney,898,0.1676,,,0.00504

@@ -1,0 +1,176 @@
+% ============================================================================
+% Anexo. Tablas y figuras complementarias  (versión para pegar en Overleaf)
+% Borrador: por ahora contiene los elementos de la sección 6.1.
+% Va después de \appendix. Las tablas ya están dentro de este archivo.
+% Figuras que hay que subir a Overleaf:
+%     D-F1_datos_faltantes_por_variable.pdf
+%     D-F2_metodo_de_descubrimiento.pdf
+% ============================================================================
+\providecommand{\rutafiguras}{figuras}
+
+\chapter{Tablas y figuras complementarias}
+\label{anx:complementarias}
+
+\section{Descripción del catálogo}
+\label{anx:catalogo}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Depuración del catálogo: número de planetas y de estrellas anfitrionas después de cada criterio.}
+    \label{tab:D-T1}
+    \small
+    \begin{tabular}{p{0.40\textwidth}rrr}
+    \toprule
+    Paso & $N_{\rm pl}$ & $N_\star$ & Excluidos \\
+    \midrule
+    Catálogo original (PSCompPars) & 6\,324 & 4\,738 & 0 \\
+    Sin planetas duplicados por nombre & 6\,324 & 4\,738 & 0 \\
+    Sin planetas controversiales (pl\_controv\_flag = 0) & 6\,267 & 4\,711 & 57 \\
+    \bottomrule
+    \end{tabular}
+    \par\smallskip
+    {\footnotesize\textit{Nota:} No se encontraron duplicados ni valores menores o iguales a cero en las variables físicas.}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Variables seleccionadas del catálogo, unidades y disponibilidad en el catálogo limpio.}
+    \label{tab:D-T2}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{llllrrr}
+    \toprule
+    Variable & Descripción & Unidad & Tipo & Disponibles & Faltantes & Faltante (\%) \\
+    \midrule
+    pl\_name & Nombre del planeta &  & texto & 6\,267 & 0 & 0.000 \\
+    hostname & Nombre de la estrella anfitriona &  & texto & 6\,267 & 0 & 0.000 \\
+    pl\_letter & Letra del planeta &  & texto & 6\,267 & 0 & 0.000 \\
+    sy\_snum & Número de estrellas del sistema &  & entera & 6\,267 & 0 & 0.000 \\
+    sy\_pnum & Número de planetas del sistema &  & entera & 6\,267 & 0 & 0.000 \\
+    sy\_mnum & Número de lunas del sistema &  & entera & 6\,267 & 0 & 0.000 \\
+    cb\_flag & Indicador de planeta circumbinario &  & entera & 6\,267 & 0 & 0.000 \\
+    discoverymethod & Método de descubrimiento &  & texto & 6\,267 & 0 & 0.000 \\
+    disc\_year & Año de descubrimiento &  & entera & 6\,267 & 0 & 0.000 \\
+    disc\_facility & Instalación de descubrimiento &  & texto & 6\,267 & 0 & 0.000 \\
+    rv\_flag & Detectado por velocidad radial &  & entera & 6\,267 & 0 & 0.000 \\
+    tran\_flag & Detectado por tránsito &  & entera & 6\,267 & 0 & 0.000 \\
+    micro\_flag & Detectado por microlente &  & entera & 6\,267 & 0 & 0.000 \\
+    ima\_flag & Detectado por imagen directa &  & entera & 6\,267 & 0 & 0.000 \\
+    ttv\_flag & Presenta variaciones del tiempo de tránsito &  & entera & 6\,267 & 0 & 0.000 \\
+    pl\_controv\_flag & Indicador de planeta controversial &  & entera & 6\,267 & 0 & 0.000 \\
+    $P$ & Período orbital & días & decimal & 5\,927 & 340 & 5.420 \\
+    $a$ & Semieje mayor & au & decimal & 5\,846 & 421 & 6.720 \\
+    pl\_orbeccen & Excentricidad & adimensional & decimal & 5\,225 & 1\,042 & 16.630 \\
+    $R_p$ & Radio planetario & radios terrestres & decimal & 6\,223 & 44 & 0.700 \\
+    pl\_radelim & Indicador de límite en el radio &  & decimal & 6\,223 & 44 & 0.700 \\
+    $M_p$ & Masa planetaria (o masa mínima) & masas terrestres & decimal & 6\,241 & 26 & 0.420 \\
+    pl\_bmasselim & Indicador de límite en la masa &  & decimal & 6\,241 & 26 & 0.420 \\
+    pl\_bmassprov & Procedencia de la masa &  & texto & 6\,267 & 0 & 0.000 \\
+    pl\_dens & Densidad planetaria reportada & g/cm$^{3}$ & decimal & 6\,133 & 134 & 2.140 \\
+    pl\_insol & Flujo incidente reportado & flujo terrestre & decimal & 5\,695 & 572 & 9.130 \\
+    pl\_eqt & Temperatura de equilibrio & K & decimal & 5\,754 & 513 & 8.190 \\
+    st\_spectype & Tipo espectral &  & texto & 2\,303 & 3\,964 & 63.250 \\
+    $T_{\rm eff}$ & Temperatura efectiva estelar & K & decimal & 5\,970 & 297 & 4.740 \\
+    $R_\star$ & Radio estelar & radios solares & decimal & 5\,953 & 314 & 5.010 \\
+    $M_\star$ & Masa estelar & masas solares & decimal & 6\,260 & 7 & 0.110 \\
+    {[Fe/H]} & Metalicidad estelar & dex & decimal & 5\,639 & 628 & 10.020 \\
+    st\_metratio & Razón usada para la metalicidad &  & texto & 5\,622 & 645 & 10.290 \\
+    st\_lum & Luminosidad estelar & log10(luminosidad solar) & decimal & 5\,956 & 311 & 4.960 \\
+    st\_logg & Gravedad superficial estelar & log10(cm/s$^{2}$) & decimal & 5\,947 & 320 & 5.110 \\
+    Edad & Edad estelar & Gyr & decimal & 4\,853 & 1\,414 & 22.560 \\
+    Distancia & Distancia & pc & decimal & 6\,240 & 27 & 0.430 \\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.72\textwidth]{\rutafiguras/D-F1_datos_faltantes_por_variable}
+    \caption{Porcentaje de datos faltantes por variable en el catálogo limpio.}
+    \label{fig:D-F1}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Composición del catálogo limpio por método de descubrimiento.}
+    \label{tab:D-T4}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{llrr}
+    \toprule
+    Valor en el catálogo & Método & $N_{\rm pl}$ & \% \\
+    \midrule
+    Transit & Tránsito & 4\,660 & 74.360 \\
+    Radial Velocity & Velocidad radial & 1\,162 & 18.540 \\
+    Microlensing & Microlente gravitacional & 281 & 4.480 \\
+    Imaging & Imagen directa & 95 & 1.520 \\
+    Transit Timing Variations & Variaciones del tiempo de tránsito & 40 & 0.640 \\
+    Eclipse Timing Variations & Variaciones del tiempo de eclipse & 8 & 0.130 \\
+    Pulsar Timing & Cronometría de púlsares & 8 & 0.130 \\
+    Astrometry & Astrometría & 6 & 0.100 \\
+    Orbital Brightness Modulation & Modulación orbital del brillo & 4 & 0.060 \\
+    Pulsation Timing Variations & Variaciones del tiempo de pulsación & 2 & 0.030 \\
+    Disk Kinematics & Cinemática del disco & 1 & 0.020 \\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{\rutafiguras/D-F2_metodo_de_descubrimiento}
+    \caption{Número de planetas por método de descubrimiento.}
+    \label{fig:D-F2}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Clasificaciones auxiliares por masa y período orbital, e indicadores de subpoblaciones.}
+    \label{tab:D-T6}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lllrr}
+    \toprule
+    Clasificación & Clase & Criterio & $N_{\rm pl}$ & \% \\
+    \midrule
+    clase\_masa & masa\_terrestre & Mp $<$ 2 $M_\oplus$ & 507 & 8.090 \\
+    clase\_masa & supertierra\_masa & 2 $\leq$ Mp $<$ 10 & 2\,741 & 43.740 \\
+    clase\_masa & subneptuno\_neptuno\_masa & 10 $\leq$ Mp $<$ 50 & 950 & 15.160 \\
+    clase\_masa & gigante\_masa & 50 $\leq$ Mp $<$ 4000 & 1\,879 & 29.980 \\
+    clase\_masa & muy\_masivo & Mp $\geq$ 4000 & 164 & 2.620 \\
+    clase\_masa & sin\_dato & masa no disponible & 26 & 0.410 \\
+    clase\_periodo & USP & P $<$ 1 d & 159 & 2.540 \\
+    clase\_periodo & periodo\_corto & 1 $\leq$ P $<$ 10 d & 2\,695 & 43.000 \\
+    clase\_periodo & periodo\_intermedio & 10 $\leq$ P $<$ 100 d & 2\,100 & 33.510 \\
+    clase\_periodo & periodo\_largo & P $\geq$ 100 d & 973 & 15.530 \\
+    clase\_periodo & sin\_dato & período no disponible & 340 & 5.430 \\
+    indicador & es\_pequeno & Rp $<$ 2 $R_\oplus$ & 1\,759 & 28.070 \\
+    indicador & es\_gigante & Rp $\geq$ 6 $R_\oplus$ & 2\,090 & 33.350 \\
+    indicador & es\_hot\_jupiter & Rp $\geq$ 6 $R_\oplus$ y P $<$ 10 d & 792 & 12.640 \\
+    indicador & es\_super\_puff & Rp $\geq$ 4 $R_\oplus$ y densidad $<$ 0.3 g/cm$^{3}$ & 230 & 3.670 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} Las masas y radios no medidos son estimaciones del archivo a partir de una relación masa-radio.}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Verificación de los parámetros derivados frente a los valores del catálogo.}
+    \label{tab:D-T7}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lrrrrr}
+    \toprule
+    Comparación & $N$ & Razón mediana & $Q_1$ & $Q_3$ & $|\log_{10}$ razón$|$ mediana \\
+    \midrule
+    Semieje mayor: catalogado / Kepler & 5\,513 & 1.000 & 0.994 & 1.006 & 0.002 \\
+    Flujo incidente: catalogado / calculado & 5\,644 & 0.997 & 0.919 & 1.080 & 0.035 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} El flujo incidente se calculó para 5948 planetas; en 412 de ellos el semieje mayor se derivó con la tercera ley de Kepler.}
+\end{table}

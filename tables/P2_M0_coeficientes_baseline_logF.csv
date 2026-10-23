@@ -1,0 +1,3 @@
+modelo,variable,coef,IC95_coef_low,IC95_coef_high,OR,IC95_OR_low,IC95_OR_high,p_value
+M0,const,2.193,1.9619,2.424,8.9617,7.1127,11.2912,0.0
+M0,log_insol_calculada,-0.7657,-0.8781,-0.6533,0.465,0.4156,0.5203,0.0

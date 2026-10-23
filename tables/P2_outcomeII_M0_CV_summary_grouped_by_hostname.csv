@@ -1,0 +1,2 @@
+modelo,CV_R2_mean,CV_R2_std,CV_RMSE_mean,CV_RMSE_std,CV_MAE_mean,CV_MAE_std
+MR_M0_spline_logRp,0.255,0.0968,0.3724,0.0231,0.2466,0.0213

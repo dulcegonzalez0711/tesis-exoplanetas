@@ -1,0 +1,4 @@
+predictor,escala,OR_escalado,IC95_OR_low_escalado,IC95_OR_high_escalado,p_value
+log_insol_calculada,+1 dex en irradiación,0.2452,0.2119,0.2836,0.0
+st_mass,+0.1 M_sun,1.4758,1.4088,1.546,0.0
+st_met,+0.1 dex en [Fe/H],1.0708,1.0172,1.1273,0.009

@@ -1,0 +1,6 @@
+radius_class,class_code,N_planets,logloss_B0,logloss_BM,logloss_BZ,logloss_BMZ,added_info_from_Mstar,added_info_from_FeH,added_info_from_Mstar_and_FeH,Mstar_gain_given_FeH,FeH_gain_given_Mstar,dominant_simple_predictor,dominant_conditional_predictor
+supertierra,0,1080,1.3873,1.344,1.3577,1.3277,0.0432,0.0295,0.0596,0.03,0.0163,Mstar,Mstar
+terrestre,1,514,1.9627,1.8639,1.8853,1.8263,0.0988,0.0775,0.1364,0.0589,0.0376,Mstar,Mstar
+neptuniano,2,1937,0.7146,0.7033,0.7118,0.6995,0.0113,0.0029,0.0151,0.0122,0.0038,Mstar,Mstar
+gigante_gaseoso,3,720,1.8571,1.7688,1.705,1.6656,0.0883,0.1521,0.1915,0.0394,0.1032,[Fe/H],[Fe/H]
+mayor_que_jupiter,4,210,2.5603,1.4469,2.5531,1.4162,1.1134,0.0072,1.1441,1.1369,0.0307,Mstar,Mstar

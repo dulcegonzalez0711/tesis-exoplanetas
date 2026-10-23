@@ -1,0 +1,5 @@
+﻿variante,N_planetas,N_estrellas,coef_interaccion,IC95_inf,IC95_sup,valor_p,delta_AIC,delta_BIC,delta_pseudo_R2
+Tránsito (principal),2565,1981,-1.5901,-2.1265,-1.0537,6.24e-09,-40.1941,-34.3443,0.013
+Todos los métodos,2775,2097,-1.4958,-1.9076,-1.084,1.09e-12,-53.2771,-47.3487,0.0158
+Kepler,1876,1455,-2.0175,-2.8696,-1.1654,3.47e-06,-28.6107,-23.0738,0.0126
+"Tránsito, corte único en 1.6 R_Tierra",3116,2293,-1.2809,-1.7354,-0.8264,3.33e-08,-33.0352,-26.9909,0.0095

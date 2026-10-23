@@ -1,0 +1,6 @@
+clase_radio,N_planetas,N_sistemas,Rp_mediana,Mstar_mediana,FeH_mediana,periodo_mediana,masa_planetaria_mediana,densidad_mediana
+terrestre,571,473,1.047,0.832,-0.02,4.5486,1.28,5.6162
+supertierra,1188,1023,1.59,0.89,0.0,6.4525,3.29,4.4685
+neptuniano,2374,1904,2.72,0.92,0.01,14.1552,8.2,2.2029
+gigante_gaseoso,1853,1645,12.7,1.03,0.1,85.3316,411.272,1.0513
+mayor_que_jupiter,237,235,16.8135,1.2995,0.05,3.314,366.774,0.3873

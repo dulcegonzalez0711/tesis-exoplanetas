@@ -1,0 +1,20 @@
+% Tabla A3-T7. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Análisis III: comparación de los modelos logísticos de la condición gapped. Diferencias respecto al modelo base G0.}
+    \label{tab:A3-T7}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lp{0.40\textwidth}rrrrrrrrrrr}
+    \toprule
+    Modelo & Predictores & $N_{\rm sis}$ & pseudo-$R^2$ & AIC & BIC & log-loss & Brier & $\Delta$pseudo-$R^2$ & $\Delta$AIC & $\Delta$BIC & $\Delta$log-loss & $\Delta$Brier \\
+    \midrule
+    G0 & $\tilde{R}_p$ + $N_{\rm pl}$ & 615 & 0.0184 & 491.0 & 504.3 & 0.3943 & 0.1176 & +0.0000 & +0.0 & +0.0 & +0.0000 & +0.0000 \\
+    G1 & $\tilde{R}_p$ + $N_{\rm pl}$ + $M_\star$ + {[Fe/H]} & 615 & 0.0392 & 484.7 & 506.8 & 0.3860 & 0.1159 & +0.0208 & -6.3 & +2.6 & -0.0084 & -0.0018 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} 85 de 615 sistemas son gapped. Prueba de razón de verosimilitud G0 frente a G1: LR = 10.28, 2 g.l., p = 0.0059.}
+\end{table}

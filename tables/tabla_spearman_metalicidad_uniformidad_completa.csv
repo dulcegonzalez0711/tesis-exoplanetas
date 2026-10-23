@@ -1,0 +1,3 @@
+analisis,N,spearman_rho,p_value
+st_met_vs_median_abs_log_radius_ratio,615,0.12247572340736687,0.0023455805002407224
+st_met_vs_radius_cv_N_ge_3,200,0.16959891249240047,0.016355879684231567

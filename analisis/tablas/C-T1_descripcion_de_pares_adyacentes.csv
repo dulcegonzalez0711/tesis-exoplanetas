@@ -1,0 +1,8 @@
+﻿variable,N,mediana,Q1,Q3,IQR,minimo,maximo
+period_ratio,898,2.166,1.7204,3.1207,1.4003,1.0383,54.0833
+log_period_ratio,898,0.7729,0.5426,1.1381,0.5955,0.0376,3.9905
+radius_ratio,898,1.1501,0.9486,1.4799,0.5313,0.4124,3.6749
+abs_log_radius_ratio,898,0.2223,0.0953,0.4383,0.343,0.0,1.3015
+abs_log_radius_ratio en par_rocoso,132,0.0819,0.0378,0.1571,0.1193,0.0,0.4637
+abs_log_radius_ratio en par_mixto,270,0.5309,0.3721,0.6809,0.3087,0.0368,1.3015
+abs_log_radius_ratio en par_volatil,496,0.1646,0.0796,0.3027,0.2232,0.0,0.8765

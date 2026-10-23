@@ -1,0 +1,5 @@
+﻿predictor,respuesta,prueba,N,estadistico,IC95_inf,IC95_sup,diferencia_medianas,valor_p
+st_mass,median_period_ratio,Spearman,615,-0.1104,-0.1867,-0.0297,,0.00615
+st_mass,gapped,Mann-Whitney,615,-0.1637,,,-0.036,0.0153
+st_met,median_period_ratio,Spearman,615,0.0237,-0.0544,0.1008,,0.558
+st_met,gapped,Mann-Whitney,615,0.0651,,,0.016,0.335

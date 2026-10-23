@@ -1,0 +1,6 @@
+clase_radio,N,FeH_mediana,FeH_Q1,FeH_Q3,FeH_IQR
+terrestre,543,-0.02,-0.13,0.0528,0.1828
+supertierra,1138,0.0,-0.1,0.07,0.17
+neptuniano,2160,0.01,-0.08,0.1,0.18
+gigante_gaseoso,1538,0.1,-0.03,0.22,0.25
+mayor_que_jupiter,221,0.05,-0.055,0.176,0.231

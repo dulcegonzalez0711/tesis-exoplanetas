@@ -1,0 +1,8 @@
+variable,N_disponibles,N_faltantes,porcentaje_disponible
+hostname,615,0,100.0
+N_planetas,615,0,100.0
+median_period_ratio,615,0,100.0
+gapped,615,0,100.0
+median_radius,615,0,100.0
+st_mass,615,0,100.0
+st_met,615,0,100.0

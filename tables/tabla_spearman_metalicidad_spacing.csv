@@ -1,0 +1,3 @@
+analisis,N,spearman_rho,p_value
+st_met_vs_median_period_ratio,615,0.023673725785329065,0.5578909404329837
+st_met_vs_log_median_period_ratio,615,0.023673725785329065,0.5578909404329837

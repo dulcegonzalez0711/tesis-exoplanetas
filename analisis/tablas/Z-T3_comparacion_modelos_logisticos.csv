@@ -1,0 +1,4 @@
+﻿modelo,predictores,N_planetas,pseudo_R2,AIC,BIC,log_loss,brier,delta_AIC,delta_pseudo_R2,delta_log_loss,delta_brier
+M0,logF_c,2565,0.0739,3019.1064,3030.8058,0.5877,0.1987,0.0,0.0,0.0,0.0
+M1,logF_c + Mstar_c + FeH_c,2565,0.1785,2682.5664,2705.9652,0.5214,0.1737,-336.54,0.1046,-0.0664,-0.025
+M2,logF_c + Mstar_c + FeH_c + logF_c_x_Mstar_c,2565,0.1914,2642.3723,2671.6209,0.5131,0.1708,-376.7341,0.1176,-0.0746,-0.0279

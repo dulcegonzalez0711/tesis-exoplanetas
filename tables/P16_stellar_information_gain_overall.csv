@@ -1,0 +1,3 @@
+model,predictors,N_planets,N_hosts,AIC,BIC,pseudo_R2_McFadden,log_loss,delta_AIC_vs_B0,delta_log_loss_vs_B0,delta_pseudo_R2_vs_B0
+B0,logP,4461,3390,11548.0887,11599.3137,0.072,1.2925,0.0,0.0,0.0
+B1,logP + Mstar + [Fe/H],4461,3390,10480.594,10583.0441,0.1592,1.1711,-1067.4947,-0.1214,0.0872

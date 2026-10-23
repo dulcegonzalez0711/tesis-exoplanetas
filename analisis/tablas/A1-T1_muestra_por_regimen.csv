@@ -1,0 +1,6 @@
+﻿clase_radio,criterio,N_planetas,porcentaje,pl_orbper_mediana,st_mass_mediana,st_met_mediana
+terrestre,Rp < 1.25 R_Tierra,514,11.522,4.455,0.86,-0.01
+supertierra,1.25 <= Rp < 2 R_Tierra,1080,24.21,6.496,0.91,0.0
+neptuniano,2 <= Rp < 6 R_Tierra,1937,43.421,14.554,0.939,0.01
+gigante_gaseoso,6 <= Rp < 15 R_Tierra,720,16.14,4.624,1.034,0.12
+mayor_que_jupiter,Rp >= 15 R_Tierra,210,4.707,3.283,1.322,0.064

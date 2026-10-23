@@ -1,0 +1,2 @@
+analysis,model,outcome,predictors,N_sistemas,adj_R2,AIC,BIC,RMSE,MAE
+Architecture spacing — baseline,M0,log10(median_period_ratio),median_radius_z + N_planetas_z,615,0.0668,50.464,63.7288,0.2509,0.1796

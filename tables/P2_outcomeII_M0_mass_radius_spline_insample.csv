@@ -1,0 +1,2 @@
+modelo,formula,N,N_hosts,R2_insample,RMSE_insample,MAE_insample,AIC,BIC
+MR_M0_spline_logRp,"logMp ~ spline(logRp, df=4)",593,391,0.2866,0.3676,0.2437,505.9674,527.8933

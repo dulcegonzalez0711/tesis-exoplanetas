@@ -1,0 +1,13 @@
+variable,definicion
+period_span,Razón entre el período orbital máximo y mínimo del sistema: P_max / P_min.
+median_radius,Mediana de los radios planetarios del sistema.
+max_radius,Radio planetario máximo del sistema.
+min_radius,Radio planetario mínimo del sistema.
+median_adjacent_radius_ratio,Mediana de las razones de radio entre planetas adyacentes ordenados por período: R_out / R_in.
+median_abs_log_radius_ratio,Mediana de |log(R_out / R_in)| para pares adyacentes. Mide desigualdad típica de tamaños entre planetas vecinos.
+outer_larger_fraction,Fracción de pares adyacentes en los que el planeta exterior es más grande que el interior.
+radius_cv,Coeficiente de variación de los radios planetarios del sistema. Se calcula solo para sistemas con N_planetas >= 3.
+std_log_period_ratio,Desviación estándar de log(P_out / P_in) para pares adyacentes. Se calcula solo para sistemas con N_planetas >= 3.
+period_ratio_cv,Coeficiente de variación de las razones de período adyacentes. Se calcula solo para sistemas con N_planetas >= 3.
+radius_gradient,Pendiente de log(R_p) vs log(P) dentro del sistema. Valores positivos indican que el radio tiende a aumentar hacia órbitas más externas. Se calcula solo para sistemas con N_planetas >= 3.
+compactness_proxy,"Proxy de compactación definido como (N_planetas - 1) / log(P_max / P_min). Valores mayores indican más planetas por intervalo logarítmico de período. Se usa como proxy descriptivo, no como definición física universal."

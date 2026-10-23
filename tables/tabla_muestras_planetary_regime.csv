@@ -1,0 +1,4 @@
+muestra,N_planetas,N_sistemas,N_super_Earth,N_valley_excluded,N_sub_Neptune,N_modelo_conservador,frac_sub_Neptune_conservador
+FULL_SMALL,3592,2621,934,613,2045,2979,0.6865
+TRANSIT_SMALL,3261,2423,873,568,1820,2693,0.6758
+KEPLER_SMALL,2300,1694,659,424,1217,1876,0.6487

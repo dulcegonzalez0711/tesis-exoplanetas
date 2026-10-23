@@ -1,0 +1,6 @@
+radius_class,AUC_B0,AUC_B1,delta_AUC_B1_minus_B0
+supertierra,0.5677,0.6461,0.0784
+terrestre,0.689,0.7493,0.0603
+neptuniano,0.744,0.7514,0.0074
+gigante_gaseoso,0.5465,0.6986,0.1521
+mayor_que_jupiter,0.8125,0.9454,0.1328

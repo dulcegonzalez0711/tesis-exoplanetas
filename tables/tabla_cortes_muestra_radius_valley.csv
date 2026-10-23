@@ -1,0 +1,9 @@
+corte,N_planetas,N_removidos,porcentaje_restante
+muestra inicial,6267,0,100.0
++ pl_rade disponible,6223,44,99.3
+1 < Rp < 4 R_earth,3592,2631,57.32
++ st_mass disponible,3592,0,57.32
++ st_teff disponible,3539,53,56.47
++ st_met disponible,3359,180,53.6
++ pl_orbper disponible,3359,0,53.6
++ st_rad disponible,3357,2,53.57

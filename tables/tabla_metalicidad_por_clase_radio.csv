@@ -1,0 +1,6 @@
+clase_radio,N,mediana,Q1,Q3,IQR,minimo,maximo
+terrestre,543,-0.02,-0.13,0.053,0.183,-0.56,0.41
+supertierra,1138,0.0,-0.1,0.07,0.17,-0.95,0.56
+neptuniano,2160,0.01,-0.08,0.1,0.18,-0.92,0.486
+gigante_gaseoso,1538,0.1,-0.03,0.22,0.25,-1.0,0.79
+mayor_que_jupiter,221,0.05,-0.055,0.176,0.231,-0.56,0.432

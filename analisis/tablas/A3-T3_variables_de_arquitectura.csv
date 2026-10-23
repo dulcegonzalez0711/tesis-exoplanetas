@@ -1,0 +1,13 @@
+﻿variable,definicion,N,mediana,minimo,maximo
+median_period_ratio,"Mediana de las razones de período de planetas adyacentes, P_ext / P_int.",615,2.343,1.169,54.083
+max_period_ratio,Máxima razón de período entre planetas adyacentes.,615,2.538,1.169,54.083
+gapped,1 si alguna razón de período adyacente es mayor que 5.,615,0.0,0.0,1.0
+period_span,Razón entre el período máximo y el mínimo del sistema.,615,3.231,1.169,111.825
+median_radius,Mediana de los radios planetarios del sistema.,615,2.045,1.035,3.745
+median_abs_log_radius_ratio,Mediana de |ln(R_ext / R_int)| en pares adyacentes (desigualdad de tamaños).,615,0.242,0.0,1.302
+outer_larger_fraction,Fracción de pares adyacentes en que el planeta exterior es mayor.,615,1.0,0.0,1.0
+compactness_proxy,(N_planetas - 1) / ln(period_span).,615,1.178,0.251,6.387
+radius_cv,Coeficiente de variación de los radios (solo sistemas con N >= 3).,200,0.246,0.007,0.596
+std_log_period_ratio,Desviación estándar de ln(P_ext / P_int) (solo N >= 3).,200,0.18,0.001,1.997
+period_ratio_cv,Coeficiente de variación de las razones de período (solo N >= 3).,200,0.178,0.001,1.256
+radius_gradient,Pendiente de ln(Rp) frente a ln(P) dentro del sistema (solo N >= 3).,200,0.182,-0.529,0.843

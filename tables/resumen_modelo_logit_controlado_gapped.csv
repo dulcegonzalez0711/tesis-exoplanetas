@@ -1,0 +1,2 @@
+modelo,N,pseudo_R2,LLR_p_value,AIC,BIC
+gapped ~ st_met + st_mass + median_radius,615,0.02123679218441321,0.01480849913278356,491.60205502990567,509.2885441011317

@@ -1,0 +1,2 @@
+modelo,N,R2,R2_ajustado,F_p_value,AIC,BIC,interaccion_coef,interaccion_p
+U_R ~ log_period_ratio * st_met + st_mass + pair_median_radius,898,0.05980588482527649,0.05453573843976789,1.2445864760032905e-10,-82.06100005931626,-53.25997964950306,-0.03078596986447514,0.6988893075209529

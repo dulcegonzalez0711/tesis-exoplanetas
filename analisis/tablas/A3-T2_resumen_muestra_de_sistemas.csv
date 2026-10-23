@@ -1,0 +1,17 @@
+﻿bloque,caracteristica,valor,porcentaje
+Muestra,Sistemas,615,
+Muestra,Planetas en esos sistemas,1513,
+Muestra,Sistemas gapped,85,13.821
+Medianas,Mediana de la razón de períodos adyacentes,2.343,
+Medianas,Mediana del radio planetario mediano [R_Tierra],2.045,
+Medianas,Mediana de la masa estelar [M_sol],0.885,
+Medianas,Mediana de [Fe/H] [dex],-0.006,
+Multiplicidad,N = 2,415,67.48
+Multiplicidad,N = 3,137,22.276
+Multiplicidad,N = 4,47,7.642
+Multiplicidad,N >= 5,16,2.602
+Origen observacional,Kepler,389,63.252
+Origen observacional,TESS,95,15.447
+Origen observacional,solo transito,67,10.894
+Origen observacional,velocidad radial,64,10.407
+Radios,Sistemas con todos sus planetas observados en tránsito,542,88.13

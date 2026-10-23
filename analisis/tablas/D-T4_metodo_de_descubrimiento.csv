@@ -1,0 +1,12 @@
+﻿discoverymethod,metodo,N_planetas,porcentaje
+Transit,Tránsito,4660,74.36
+Radial Velocity,Velocidad radial,1162,18.54
+Microlensing,Microlente gravitacional,281,4.48
+Imaging,Imagen directa,95,1.52
+Transit Timing Variations,Variaciones del tiempo de tránsito,40,0.64
+Eclipse Timing Variations,Variaciones del tiempo de eclipse,8,0.13
+Pulsar Timing,Cronometría de púlsares,8,0.13
+Astrometry,Astrometría,6,0.1
+Orbital Brightness Modulation,Modulación orbital del brillo,4,0.06
+Pulsation Timing Variations,Variaciones del tiempo de pulsación,2,0.03
+Disk Kinematics,Cinemática del disco,1,0.02

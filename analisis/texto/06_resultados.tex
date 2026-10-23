@@ -1,0 +1,289 @@
+% ============================================================================
+% Capítulo 6. Resultados
+% Borrador: sección 6.1 redactada; secciones 6.2 a 6.5 pendientes.
+%
+% Las tablas se insertan desde analisis/tablas/latex y las figuras desde
+% analisis/figuras. Si en el proyecto de LaTeX esas carpetas tienen otra ruta,
+% basta cambiar las dos líneas siguientes (o definir los comandos antes de
+% incluir este archivo).
+% Requiere: booktabs, graphicx, amsmath, amssymb.
+%
+% Las cifras del texto que no están en una tabla se pueden volver a calcular
+% con texto/cifras_seccion_6_1.py.
+% ============================================================================
+\providecommand{\rutatablas}{tablas/latex}
+\providecommand{\rutafiguras}{figuras}
+
+\chapter{Resultados}
+\label{cap:resultados}
+
+Este capítulo presenta los resultados en el orden en que se plantearon los análisis.
+Primero se describen el catálogo depurado y las submuestras que se obtienen de él
+(Sección~\ref{sec:res-muestras}). Después se presentan los tres análisis: los regímenes de
+radio (Sección~\ref{sec:res-analisis-I}), las propiedades físicas de los planetas pequeños
+(Sección~\ref{sec:res-analisis-II}) y la arquitectura de los sistemas
+(Sección~\ref{sec:res-analisis-III}). El capítulo termina con una comparación de la
+contribución estelar en los tres (Sección~\ref{sec:res-comparacion}). Las tablas y figuras
+complementarias se reúnen en el Anexo~\ref{anx:complementarias}.
+
+% ----------------------------------------------------------------------------
+\section{Descripción de las muestras}
+\label{sec:res-muestras}
+
+\subsection{Catálogo general y disponibilidad de parámetros}
+\label{sec:res-catalogo}
+
+\paragraph{Depuración.}
+La tabla descargada contiene 6\,324 planetas confirmados alrededor de 4\,738 estrellas
+anfitrionas. No se encontraron planetas duplicados ni valores menores o iguales a cero en
+las variables físicas. Se excluyeron los 57 planetas que el archivo marca como
+controversiales, de modo que el catálogo depurado tiene 6\,267 planetas y 4\,711 estrellas
+(Tabla~\ref{tab:D-T1}). Todos los resultados de este capítulo se refieren a ese catálogo.
+De las 4\,711 estrellas, 1\,039 (22.1\,\%) tienen dos o más planetas en el catálogo, y esos
+sistemas reúnen 2\,595 planetas (41.4\,\%). Una parte importante de los planetas comparte,
+por tanto, estrella anfitriona con otros.
+
+\paragraph{Método de descubrimiento.}
+Tres de cada cuatro planetas se descubrieron por tránsito (4\,660; 74.4\,\%). Les siguen
+la velocidad radial (1\,162; 18.5\,\%), la microlente gravitacional (281; 4.5\,\%) y la
+imagen directa (95; 1.5\,\%); los siete métodos restantes suman 69 planetas (1.1\,\%)
+(Tabla~\ref{tab:D-T4} y Figura~\ref{fig:D-F2}). Tres misiones espaciales concentran dos
+tercios del catálogo: \textit{Kepler} (2\,774 planetas), TESS (908) y K2 (549), que en
+conjunto aportan el 67.5\,\%.
+
+\paragraph{Disponibilidad de parámetros.}
+Las variables que usan los modelos están disponibles para casi todo el catálogo: la masa
+estelar en el 99.9\,\% de los planetas, el radio planetario en el 99.3\,\%, el período
+orbital en el 94.6\,\% y la metalicidad en el 90.0\,\% (Tabla~\ref{tab:D-T2}). La
+metalicidad es el predictor principal con más datos faltantes (628 planetas) y es la
+variable que más reduce las submuestras. La temperatura efectiva y el radio estelar, que
+se necesitan para calcular el flujo incidente, faltan en cerca del 5\,\% de los planetas.
+Las variables más incompletas son el tipo espectral (63.3\,\% de datos faltantes), la edad
+estelar (22.6\,\%) y la excentricidad (16.6\,\%) (Figura~\ref{fig:D-F1}).
+
+Que un parámetro esté disponible no significa que se haya medido. La tabla de parámetros
+compuestos completa el radio o la masa que faltan con una relación masa--radio. De los
+6\,223 planetas con radio, 4\,701 (75.5\,\%) se observaron en tránsito; el radio de los
+1\,522 restantes (24.5\,\%) no proviene de un tránsito. En cuanto a la masa, el catálogo la
+identifica como masa verdadera en 2\,390 planetas (38.1\,\%), como masa mínima,
+$M_p \sin i$, en 903 (14.4\,\%) y como estimación a partir del radio en 2\,974 (47.5\,\%);
+estos últimos son todos planetas observados en tránsito. Solo una fracción del catálogo
+tiene, entonces, radio y masa medidos de forma independiente, y por eso cada análisis
+exige la medición que necesita en lugar de usar todos los valores disponibles.
+
+La metalicidad tampoco es homogénea. De los 5\,639 planetas con metalicidad, en 5\,044
+(89.4\,\%) el valor corresponde a [Fe/H] y en 578 (10.3\,\%) a [M/H]; en 17 el catálogo no
+indica la escala. En este trabajo ambas se trataron como una sola variable.
+
+\paragraph{Estadística descriptiva.}
+La Tabla~\ref{tab:D-T3} resume las variables planetarias y estelares principales. Se
+reportan la mediana y los cuartiles porque las distribuciones son asimétricas y abarcan
+varios órdenes de magnitud. El planeta mediano del catálogo tiene un radio de
+2.85~$R_\oplus$ y un período de 10.6~días. La mitad de los períodos está entre 4.3 y
+37.6~días; el 48.2\,\% es menor que 10~días y el 83.6\,\%, menor que 100~días. La estrella
+anfitriona mediana tiene 0.94~$M_\odot$, 5\,544~K y [Fe/H]~$= 0.02$. El intervalo
+intercuartílico de la masa estelar va de 0.77 a 1.08~$M_\odot$ y el de la metalicidad, de
+$-0.08$ a 0.13~dex. El 86.9\,\% de los planetas orbita estrellas de entre 0.5 y
+1.5~$M_\odot$, y en el 89.4\,\% la metalicidad difiere de la solar en menos de 0.3~dex. El
+catálogo describe, por lo tanto, sobre todo planetas de período corto alrededor de
+estrellas parecidas al Sol, y el intervalo de masa estelar y de metalicidad que cubre es
+estrecho.
+
+\input{\rutatablas/D-T3_descriptiva_variables_principales}
+
+Los valores extremos de la Tabla~\ref{tab:D-T3} no representan a la población. No se aplicó
+un corte en masa, y 151 objetos (2.4\,\%) tienen una masa catalogada mayor que 13 masas de
+Júpiter; la masa máxima, 9\,535~$M_\oplus$ (30 masas de Júpiter), es la de un compañero
+descubierto por imagen directa. La densidad máxima corresponde a un planeta cuya masa es un
+límite superior, y el período máximo, a un planeta de imagen directa en una órbita muy
+amplia. Estos valores no afectan a los modelos: el análisis~II excluye los límites y se
+restringe a planetas de 1 a 4~$R_\oplus$, y los demás análisis no usan la masa planetaria.
+La muestra del análisis~I sí incluye 13 objetos (0.3\,\%) con masa medida mayor que 13
+masas de Júpiter.
+
+\paragraph{Regímenes de radio.}
+De los 6\,223 planetas con radio, el régimen más poblado es el de tipo Neptuno (2\,374;
+38.1\,\%), seguido por los gigantes gaseosos (1\,853; 29.8\,\%), las super-Tierras (1\,188;
+19.1\,\%), los planetas terrestres (571; 9.2\,\%) y los mayores que Júpiter (237; 3.8\,\%)
+(Tabla~\ref{tab:D-T5}). La distribución de radios tiene dos máximos, uno entre 2 y
+3~$R_\oplus$ y otro entre 11 y 14~$R_\oplus$, con pocos planetas entre 4 y 10~$R_\oplus$
+(Figura~\ref{fig:D-F3}a).
+
+\input{\rutatablas/D-T5_regimenes_de_radio}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{\rutafiguras/D-F3_distribucion_radio_planetario}
+    \caption{Distribución del radio planetario. (a) Todo el catálogo; las líneas verticales
+    marcan los límites de los cinco regímenes (1.25, 2, 6 y 15~$R_\oplus$). (b) Planetas en
+    tránsito entre 0.5 y 4~$R_\oplus$; la banda gris marca el intervalo
+    1.6--2.0~$R_\oplus$ excluido en el análisis de super-Tierras y sub-Neptunos.}
+    \label{fig:D-F3}
+\end{figure}
+
+El segundo máximo depende de cómo se obtuvo el radio. En los demás regímenes entre el 87 y
+el 95\,\% de los planetas se observó en tránsito, pero entre los gigantes gaseosos solo 752
+de 1\,853 (40.6\,\%). Los 1\,101 gigantes sin tránsito tienen radios muy concentrados
+(cuartiles de 12.4 y 13.6~$R_\oplus$): son los que forman la barra gris más alta de la
+Figura~\ref{fig:D-F3}a, y su radio refleja la relación masa--radio del archivo y no una
+medición. Por esta razón los análisis~I y~II usan solo planetas de tránsito, y en el
+análisis~III los resultados se comprueban en los sistemas cuyos planetas se observaron
+todos en tránsito.
+
+Las propiedades estelares cambian con el régimen (Tabla~\ref{tab:D-T5}). La mediana de la
+masa estelar aumenta de forma monótona con el tamaño del planeta: 0.83~$M_\odot$ para los
+terrestres, 0.89 para las super-Tierras, 0.92 para los de tipo Neptuno, 1.03 para los
+gigantes gaseosos y 1.30 para los mayores que Júpiter. La metalicidad mediana es
+prácticamente solar en los tres regímenes de menor tamaño ($-0.02$, 0.00 y 0.01~dex) y más
+alta en los gigantes gaseosos (0.10~dex) y en los mayores que Júpiter (0.05~dex). El
+período mediano también difiere: 4.5, 6.5 y 14.2~días en los tres primeros regímenes, y
+85.3~días en los gigantes gaseosos. Este último valor mezcla dos poblaciones: los gigantes
+sin tránsito, descubiertos en su mayoría por velocidad radial, tienen un período mediano de
+694~días, y los que transitan, de 4.6~días. Los planetas mayores que Júpiter son casi todos
+de período corto (213 de 237 tienen $P < 10$~días; mediana de 3.3~días).
+
+Estas diferencias son descriptivas. No tienen en cuenta el período orbital ni el método de
+descubrimiento, de modo que no permiten separar una asociación con la estrella de un efecto
+de la detección. Esa separación es el objeto del análisis~I
+(Sección~\ref{sec:res-analisis-I}).
+
+\paragraph{Planetas pequeños.}
+Entre los planetas en tránsito de 0.5 a 4~$R_\oplus$, la distribución de radios tiene dos
+máximos separados por un mínimo (Figura~\ref{fig:D-F3}b). En intervalos de
+0.1~$R_\oplus$, el primer máximo está en 1.5--1.6~$R_\oplus$, con 178 planetas, y el
+segundo en 2.2--2.4~$R_\oplus$, con 167 planetas en cada intervalo; el mínimo, en
+1.8--1.9~$R_\oplus$, tiene 111. Este mínimo queda dentro del intervalo de 1.6 a
+2.0~$R_\oplus$ que se excluye al comparar super-Tierras y sub-Neptunos. La depresión es
+moderada: el intervalo del mínimo contiene el 62\,\% de los planetas que el del primer
+máximo.
+
+\paragraph{Diagrama masa--radio.}
+La Figura~\ref{fig:D-F4} muestra los 1\,504 planetas (24.0\,\% del catálogo, en 1\,224
+estrellas) que se observaron en tránsito y tienen masa verdadera, sin límites en la masa ni
+en el radio. Se distinguen tres comportamientos. Por debajo de 1.6~$R_\oplus$ los planetas
+se agrupan alrededor de la curva de densidad terrestre: su densidad mediana es de
+6.7~g/cm$^{3}$ (cuartiles de 5.1 y 10.3; $N = 141$). Entre 2 y 4~$R_\oplus$ la densidad
+mediana baja a 2.8~g/cm$^{3}$ (cuartiles de 1.8 y 4.2; $N = 369$) y, a un mismo radio, las
+masas se dispersan casi un orden de magnitud: en el régimen de tipo Neptuno, los
+percentiles 10 y 90 de la masa son 4.6 y 39.3~$M_\oplus$. En los gigantes gaseosos el radio
+deja de informar sobre la masa: los percentiles 10 y 90 son 50 y 1\,215~$M_\oplus$ dentro
+de un intervalo de radios estrecho. La dispersión de masas a radio fijo entre los planetas
+pequeños es la variación que examina el análisis~II (Sección~\ref{sec:res-analisis-II}).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.82\textwidth]{\rutafiguras/D-F4_diagrama_masa_radio}
+    \caption{Diagrama masa--radio de los planetas en tránsito con masa verdadera, por
+    régimen de radio. Las curvas grises son líneas de densidad constante (1 y
+    5.51~g/cm$^{3}$).}
+    \label{fig:D-F4}
+\end{figure}
+
+\paragraph{Parámetros derivados.}
+El flujo incidente se calculó para 5\,948 planetas, el 94.9\,\% del catálogo y 253 más
+de los que tienen un flujo catalogado. En 412 de esos 5\,948 planetas el semieje mayor se
+obtuvo con la tercera ley de Kepler. En los planetas que tienen ambos valores, la razón entre el flujo del
+catálogo y el calculado tiene una mediana de 0.997 y cuartiles de 0.919 y 1.080
+($N = 5\,644$), y la razón entre el semieje mayor del catálogo y el de Kepler, una mediana
+de 1.000 y cuartiles de 0.994 y 1.006 ($N = 5\,513$) (Tabla~\ref{tab:D-T7}). El flujo
+calculado reproduce, entonces, el del catálogo. Las clasificaciones auxiliares por masa y
+por período, que no se usan en los modelos, se resumen en la Tabla~\ref{tab:D-T6}.
+
+% ----------------------------------------------------------------------------
+\subsection{Submuestras analíticas}
+\label{sec:res-submuestras}
+
+La Tabla~\ref{tab:D-T8} resume las cuatro submuestras. Ninguna se obtuvo con un filtro
+único sobre el catálogo: cada una conserva los planetas que tienen completas las variables
+de su modelo.
+
+\input{\rutatablas/D-T8_submuestras_analiticas}
+
+\paragraph{Análisis I.}
+De los 4\,660 planetas descubiertos por tránsito, 4\,461 (95.7\,\%) tienen radio, período,
+masa estelar y metalicidad. De los 199 excluidos, 198 carecen de metalicidad. La muestra
+abarca 3\,390 estrellas, de las cuales 706 (20.8\,\%) aportan más de un planeta. El
+61.5\,\% de los planetas proviene de \textit{Kepler}, el 17.1\,\% de TESS y el 11.3\,\% de
+K2.
+
+Para la comparación entre super-Tierras y sub-Neptunos, el catálogo tiene 3\,261 planetas
+descubiertos por tránsito con radio entre 1 y 4~$R_\oplus$: 873 super-Tierras, 568 en el
+intervalo de 1.6 a 2.0~$R_\oplus$ y 1\,820 sub-Neptunos. Al excluir ese intervalo y exigir
+flujo incidente, masa estelar y metalicidad quedan 2\,565 planetas en 1\,981 estrellas: 848
+super-Tierras y 1\,717 sub-Neptunos (66.9\,\%). Todos pertenecen también a la muestra de
+cinco regímenes.
+
+\paragraph{Análisis II.}
+Es la submuestra más restrictiva. De los 1\,504 planetas con masa verdadera y radio medido
+en tránsito, 1\,488 tienen además masa estelar, metalicidad y flujo incidente, y 574 de
+ellos tienen entre 1 y 4~$R_\oplus$. Estos 574 planetas, en 385 estrellas, son el 9.2\,\%
+del catálogo. A diferencia de la comparación anterior, esta muestra conserva los 85
+planetas del intervalo de 1.6 a 2.0~$R_\oplus$, porque la respuesta es la masa y no una
+clase; incluye además 120 super-Tierras y 369 sub-Neptunos. Su procedencia es distinta de
+la de las otras submuestras: el 43.6\,\% de los planetas se descubrió con TESS, el 37.1\,\%
+con \textit{Kepler} y el 13.6\,\% con K2. En 134 de las 385 estrellas (34.8\,\%) hay más de
+un planeta de la muestra.
+
+\paragraph{Análisis III.}
+La unidad de análisis es el sistema. El catálogo tiene 3\,238 planetas de 1 a 4~$R_\oplus$
+y período menor que 100~días con masa estelar y metalicidad, en 2\,340 estrellas. De
+ellas, 615 tienen al menos dos de esos planetas y forman la muestra de sistemas, con
+1\,513 planetas. Su composición se describe en la Sección~\ref{sec:res-analisis-III}.
+
+\paragraph{Relación entre las submuestras.}
+Las submuestras no son independientes entre sí. Además de la comparación entre super-Tierras
+y sub-Neptunos, que está contenida en la muestra del análisis~I, 550 de los 574 planetas del
+análisis~II y 1\,359 de los 1\,513 del análisis~III pertenecen también al análisis~I, y 312
+planetas están en las cuatro. En conjunto, los tres análisis usan 4\,622 planetas distintos,
+el 73.8\,\% del catálogo. Los tres análisis no equivalen, por lo tanto, a tres pruebas
+independientes de la relación entre la estrella y el planeta; este punto se retoma al
+compararlos (Sección~\ref{sec:res-comparacion}).
+
+Las cuatro submuestras cubren además un intervalo estelar parecido. La mediana de la masa
+estelar de sus planetas está entre 0.87 y 0.94~$M_\odot$ y la de la metalicidad, entre
+$-0.01$ y 0.02~dex. En la muestra del análisis~I, el 90\,\% central de los planetas orbita
+estrellas de 0.51 a 1.34~$M_\odot$ con metalicidad entre $-0.28$ y 0.31~dex. Las muestras
+de los análisis~II y~III se extienden algo más hacia estrellas de baja masa (percentil 5 en
+0.34~$M_\odot$). Las asociaciones que se presentan en las secciones siguientes se
+refieren, entonces, a ese intervalo de estrellas.
+
+% ----------------------------------------------------------------------------
+\section{Análisis I: regímenes de radio}
+\label{sec:res-analisis-I}
+% Pendiente.
+
+\subsection{Modelo multinomial de cinco regímenes}
+\label{sec:res-multinomial}
+
+\subsection{Análisis enfocado en super-Tierras y sub-Neptunos}
+\label{sec:res-zoom}
+
+\subsection{Verificaciones de robustez}
+\label{sec:res-robustez-I}
+
+% ----------------------------------------------------------------------------
+\section{Análisis II: propiedades físicas de planetas pequeños}
+\label{sec:res-analisis-II}
+% Pendiente.
+
+\subsection{Relación masa--radio--irradiación}
+\label{sec:res-masa-radio}
+
+\subsection{Contribución de las propiedades estelares}
+\label{sec:res-contribucion-estelar}
+
+% ----------------------------------------------------------------------------
+\section{Análisis III: arquitectura de sistemas}
+\label{sec:res-analisis-III}
+% Pendiente.
+
+\subsection{Espaciamiento orbital}
+\label{sec:res-espaciamiento}
+
+\subsection{Sistemas \textit{gapped}}
+\label{sec:res-gapped}
+
+% ----------------------------------------------------------------------------
+\section{Comparación entre los tres análisis}
+\label{sec:res-comparacion}
+% Pendiente.

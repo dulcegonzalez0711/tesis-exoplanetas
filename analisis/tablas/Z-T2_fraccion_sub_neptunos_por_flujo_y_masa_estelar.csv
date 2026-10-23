@@ -1,0 +1,8 @@
+﻿variable,grupo,minimo,mediana,maximo,N,N_sub_neptuno,fraccion,IC95_inf,IC95_sup
+log_insol_calculada,C1 (bajo),-0.845,0.933,1.308,642,511,0.796,0.763,0.825
+log_insol_calculada,C2,1.309,1.604,1.85,641,507,0.791,0.758,0.821
+log_insol_calculada,C3,1.851,2.096,2.345,641,421,0.657,0.619,0.693
+log_insol_calculada,C4 (alto),2.345,2.642,4.1,641,278,0.434,0.396,0.472
+st_mass,T1 (baja),0.09,0.73,0.84,855,492,0.575,0.542,0.608
+st_mass,T2,0.841,0.92,0.99,862,619,0.718,0.687,0.747
+st_mass,T3 (alta),0.99,1.087,2.018,848,606,0.715,0.683,0.744

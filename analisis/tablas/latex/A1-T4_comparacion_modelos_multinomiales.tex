@@ -1,0 +1,22 @@
+% Tabla A1-T4. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Análisis I: comparación de los modelos multinomiales. Las diferencias son respecto al modelo base B0.}
+    \label{tab:A1-T4}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{llrrrrrrrrr}
+    \toprule
+    Modelo & Predictores & $N_\star$ & $N_{\rm pl}$ & pseudo-$R^2$ & AIC & BIC & log-loss & $\Delta$AIC & $\Delta$pseudo-$R^2$ & $\Delta$log-loss \\
+    \midrule
+    B0 & $\log P$ & 3\,390 & 4\,461 & 0.0720 & 11548.1 & 11599.3 & 1.2925 & +0.0 & +0.0000 & +0.0000 \\
+    BM & $\log P$ + $M_\star$ & 3\,390 & 4\,461 & 0.1391 & 10722.7 & 10799.5 & 1.1991 & -825.4 & +0.0671 & -0.0934 \\
+    BZ & $\log P$ + {[Fe/H]} & 3\,390 & 4\,461 & 0.1023 & 11179.6 & 11256.4 & 1.2503 & -368.5 & +0.0303 & -0.0422 \\
+    B1 & $\log P$ + $M_\star$ + {[Fe/H]} & 3\,390 & 4\,461 & 0.1592 & 10480.6 & 10583.0 & 1.1711 & -1067.5 & +0.0872 & -0.1214 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} Métricas calculadas en la muestra de ajuste. pseudo-R2 de McFadden.}
+\end{table}

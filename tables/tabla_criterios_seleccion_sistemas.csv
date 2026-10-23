@@ -1,0 +1,8 @@
+paso,unidad,N
+Catálogo limpio base,planetas,6267
+"Con hostname, pl_name, radio, período, [Fe/H] y masa estelar disponibles",planetas,5578
+Radio planetario entre 1 y 4 R_earth,planetas,3371
+Período orbital menor a 100 días,planetas,3238
+Sistemas con al menos 2 planetas candidatos,sistemas,615
+Planetas dentro de sistemas finales,planetas,1513
+Sistemas finales,sistemas,615

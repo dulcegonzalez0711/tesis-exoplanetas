@@ -1,0 +1,37 @@
+% ============================================================================
+% Anexo. Tablas y figuras complementarias
+% Borrador: por ahora contiene los elementos de la sección 6.1.
+% Se incluye después de \appendix. Usa las mismas rutas que 06_resultados.tex.
+% ============================================================================
+\providecommand{\rutatablas}{tablas/latex}
+\providecommand{\rutafiguras}{figuras}
+
+\chapter{Tablas y figuras complementarias}
+\label{anx:complementarias}
+
+\section{Descripción del catálogo}
+\label{anx:catalogo}
+
+\input{\rutatablas/D-T1_depuracion_catalogo}
+
+\input{\rutatablas/D-T2_variables_y_disponibilidad}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.72\textwidth]{\rutafiguras/D-F1_datos_faltantes_por_variable}
+    \caption{Porcentaje de datos faltantes por variable en el catálogo limpio.}
+    \label{fig:D-F1}
+\end{figure}
+
+\input{\rutatablas/D-T4_metodo_de_descubrimiento}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{\rutafiguras/D-F2_metodo_de_descubrimiento}
+    \caption{Número de planetas por método de descubrimiento.}
+    \label{fig:D-F2}
+\end{figure}
+
+\input{\rutatablas/D-T6_clasificaciones_auxiliares}
+
+\input{\rutatablas/D-T7_verificacion_parametros_derivados}

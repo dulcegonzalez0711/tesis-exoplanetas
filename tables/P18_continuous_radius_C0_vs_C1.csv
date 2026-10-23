@@ -1,0 +1,3 @@
+model,predictors,N_planets,N_hosts,R2,adj_R2,AIC,BIC,RMSE,MAE,delta_R2_vs_C0,delta_adj_R2_vs_C0,delta_AIC_vs_C0,delta_RMSE_vs_C0
+C0,s(logP),4461,3390,0.0657,0.0647,3350.86,3389.2787,0.3518,0.2776,0.0,0.0,0.0,0.0
+C1,s(logP) + Mstar + [Fe/H],4461,3390,0.2274,0.2262,2507.2899,2558.515,0.3199,0.2542,0.1617,0.1615,-843.57,-0.0319

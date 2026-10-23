@@ -1,0 +1,23 @@
+% Tabla S-T1. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Contribución de las propiedades estelares en los tres análisis: cambio del modelo estelar respecto al modelo base.}
+    \label{tab:S-T1}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lllrlllrlrlrr}
+    \toprule
+    Análisis & Respuesta & Modelo & $N$ & Unidad & Base & Estelar & $\Delta$AIC & Ajuste & $\Delta$ajuste & Error & $\Delta$error & $\Delta$error VC \\
+    \midrule
+    I. Regímenes de radio & clase\_radio (5 regímenes) & logístico multinomial & 4\,461 & planetas & $\log P$ & B1: + $M_\star$ + {[Fe/H]} & -1067.5 & pseudo-R2 & +0.0872 & log-loss & -0.1214 & -- \\
+    I. Super-Tierras y sub-Neptunos & sub\_neptune\_conservador & logístico binario & 2\,565 & planetas & $\log F$ & M2: + $M_\star$ + {[Fe/H]} + logF x st\_mass & -376.7 & pseudo-R2 & +0.1176 & log-loss & -0.0746 & -0.0730 \\
+    II. Propiedades físicas & $\log M_p$ & lineal con spline & 574 & planetas & $s($$\log R_p$$)$ + $\log F$ & M2: + $M_\star$ + {[Fe/H]} & -15.8 & R2 & +0.0243 & RMSE [dex] & -0.0063 & -0.0043 \\
+    III. Espaciamiento orbital & log\_median\_period\_ratio & lineal & 615 & sistemas & $\tilde{R}_p$ + $N_{\rm pl}$ & S1: + $M_\star$ + {[Fe/H]} & -11.3 & R2 & +0.0229 & RMSE [dex] & -0.0031 & -- \\
+    III. Sistemas gapped & gapped & logístico binario & 615 & sistemas & $\tilde{R}_p$ + $N_{\rm pl}$ & G1: + $M_\star$ + {[Fe/H]} & -6.3 & pseudo-R2 & +0.0208 & log-loss & -0.0084 & -- \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} Valores negativos de AIC y de las medidas de error indican mejora. VC: validación cruzada agrupada por estrella (solo donde varios planetas comparten estrella).}
+\end{table}

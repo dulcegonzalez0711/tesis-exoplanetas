@@ -1,0 +1,2 @@
+analisis,N_pares,spearman_rho,p_value,rho_IC95_low,rho_IC95_high,n_bootstrap
+log_period_ratio_vs_abs_log_radius_ratio,898,0.18257703118277074,3.5887909044280015e-08,0.11794997481140307,0.2464496141050914,5000

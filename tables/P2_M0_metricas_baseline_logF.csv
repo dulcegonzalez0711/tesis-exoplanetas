@@ -1,0 +1,2 @@
+modelo,formula,N,AIC,BIC,pseudo_R2,log_loss,brier_score
+M0,SN ~ logF,2934,3455.5919,3467.5602,0.0554,0.5882,0.1987

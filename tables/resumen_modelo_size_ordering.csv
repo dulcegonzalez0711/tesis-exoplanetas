@@ -1,0 +1,2 @@
+modelo,N,pseudo_R2,LLR_p_value,AIC,BIC
+outer_larger ~ st_met + st_mass + log_period_ratio,898,0.025768410405168862,2.566173834262613e-06,1093.765062473533,1112.9657427467416

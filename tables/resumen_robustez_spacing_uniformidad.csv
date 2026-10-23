@@ -1,0 +1,9 @@
+criterio,resultado,interpretacion
+Signo de Spearman,positivo en todas las submuestras,La dirección de la asociación es estable.
+IC95% bootstrap,no incluye cero en ninguna submuestra,La incertidumbre bootstrap apoya una asociación positiva.
+Pendiente controlada,positiva y significativa en todas las submuestras,La relación persiste al controlar por propiedades estelares y del sistema.
+Transit-only,señal positiva,No depende exclusivamente de mezclar métodos observacionales.
+Kepler,señal positiva,No desaparece al restringir a sistemas Kepler.
+Sistemas N=2,señal positiva,No está impulsada solo por sistemas de alta multiplicidad.
+Sistemas N>=3,señal positiva,Tampoco desaparece en sistemas con tres o más planetas.
+Conclusión general,resultado robusto,La señal spacing–uniformidad es candidata a resultado principal.

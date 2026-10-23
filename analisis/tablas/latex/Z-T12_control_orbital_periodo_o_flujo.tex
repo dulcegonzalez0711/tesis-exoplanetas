@@ -1,0 +1,18 @@
+% Tabla Z-T12. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Comparación del modelo M1 con el período orbital o con el flujo incidente como control orbital.}
+    \label{tab:Z-T12}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{llrrrrrrrr}
+    \toprule
+    Modelo & Predictores & $N_{\rm pl}$ & pseudo-$R^2$ & AIC & BIC & log-loss & Brier & $\Delta$AIC & $\Delta$pseudo-$R^2$ \\
+    \midrule
+    M1 con período & $\log P$ + $M_\star$ + {[Fe/H]} & 2\,565 & 0.190 & 2644.3 & 2667.7 & 0.514 & 0.171 & +0.0 & 0.000 \\
+    M1 con flujo & $\log F$ + $M_\star$ + {[Fe/H]} & 2\,565 & 0.178 & 2682.6 & 2706.0 & 0.521 & 0.174 & +38.3 & -0.012 \\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}

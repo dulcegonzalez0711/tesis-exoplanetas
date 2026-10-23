@@ -1,0 +1,4 @@
+mstar_bin_3,N_planetas,Mstar_min,Mstar_mediana,Mstar_max,Rp_mediana,Rp_Q1,Rp_Q3,Rp_IQR,N_super_Earth,N_sub_Neptune,fraccion_super_Earth,fraccion_sub_Neptune,ratio_subN_superEarth
+Mstar_baja,1149,0.0898,0.686,0.83,1.96,1.44,2.467,1.027,390,759,0.3394,0.6606,1.9462
+Mstar_media,1089,0.831,0.91,0.981,2.27,1.64,2.77,1.13,255,834,0.2342,0.7658,3.2706
+Mstar_alta,1119,0.982,1.08,2.018,2.27,1.63,2.839,1.209,262,857,0.2341,0.7659,3.271

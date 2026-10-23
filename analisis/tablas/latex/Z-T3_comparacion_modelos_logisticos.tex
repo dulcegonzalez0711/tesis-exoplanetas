@@ -1,0 +1,21 @@
+% Tabla Z-T3. Generada automáticamente; no editar a mano.
+% Requiere \usepackage{booktabs} (y graphicx si la tabla es ancha).
+\begin{table}[htbp]
+    \centering
+    \caption{Super-Tierras y sub-Neptunos: comparación de los modelos logísticos en la muestra de ajuste. Diferencias respecto a M0.}
+    \label{tab:Z-T3}
+    \small
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{llrrrrrrrrrr}
+    \toprule
+    Modelo & Predictores & $N_{\rm pl}$ & pseudo-$R^2$ & AIC & BIC & log-loss & Brier & $\Delta$AIC & $\Delta$pseudo-$R^2$ & $\Delta$log-loss & $\Delta$Brier \\
+    \midrule
+    M0 & $\log F$ & 2\,565 & 0.074 & 3019.1 & 3030.8 & 0.588 & 0.199 & +0.0 & 0.000 & 0.000 & 0.000 \\
+    M1 & $\log F$ + $M_\star$ + {[Fe/H]} & 2\,565 & 0.178 & 2682.6 & 2706.0 & 0.521 & 0.174 & -336.5 & 0.105 & -0.066 & -0.025 \\
+    M2 & $\log F$ + $M_\star$ + {[Fe/H]} + $\log F \times M_\star$ & 2\,565 & 0.191 & 2642.4 & 2671.6 & 0.513 & 0.171 & -376.7 & 0.118 & -0.075 & -0.028 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \par\smallskip
+    {\footnotesize\textit{Nota:} 2565 planetas alrededor de 1981 estrellas. pseudo-R2 de McFadden.}
+\end{table}

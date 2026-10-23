@@ -1,0 +1,6 @@
+﻿clase_radio,N_planetas,log_loss_B0,ganancia_st_mass,ganancia_st_met,ganancia_ambas,ganancia_st_mass_dado_st_met,ganancia_st_met_dado_st_mass,predictor_dominante,AUC_B0,AUC_B1
+terrestre,514,1.9627,0.0988,0.0775,0.1364,0.0589,0.0376,st_mass,0.689,0.7493
+supertierra,1080,1.3873,0.0432,0.0295,0.0596,0.03,0.0163,st_mass,0.5677,0.6461
+neptuniano,1937,0.7146,0.0113,0.0029,0.0151,0.0122,0.0038,st_mass,0.744,0.7514
+gigante_gaseoso,720,1.8571,0.0883,0.1521,0.1915,0.0394,0.1032,st_met,0.5465,0.6986
+mayor_que_jupiter,210,2.5603,1.1134,0.0072,1.1441,1.1369,0.0307,st_mass,0.8125,0.9454

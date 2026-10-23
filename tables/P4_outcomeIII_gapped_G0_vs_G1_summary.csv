@@ -1,0 +1,3 @@
+analysis,model,predictors,N_sistemas,N_gapped,frac_gapped,pseudo_R2_McFadden,AIC,BIC,log_loss,Brier,delta_pseudo_R2_vs_G0,delta_AIC_vs_G0,delta_log_loss_vs_G0,delta_Brier_vs_G0
+Architecture gapped,G0,median_radius_z + N_planetas_z,615,85,0.1382,0.0184,491.018,504.2828,0.3943,0.1176,0.0,0.0,0.0,0.0
+Architecture gapped,G1,median_radius_z + N_planetas_z + st_mass_z + st_met_z,615,85,0.1382,0.0392,484.7364,506.8445,0.386,0.1159,0.0208,-6.2816,-0.0084,-0.0018

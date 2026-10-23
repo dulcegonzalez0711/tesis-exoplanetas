@@ -1,0 +1,2 @@
+modelo,N,R2,R2_ajustado,F_p_value,AIC,BIC
+U_R ~ log_period_ratio + pair_type + st_met + st_mass,898,0.46381681810524034,0.46081130699596473,4.23715378349349e-118,-586.3872286088033,-557.5862081989901

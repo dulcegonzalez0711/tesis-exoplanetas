@@ -1,0 +1,9 @@
+﻿corte,N_planetas,N_estrellas
+Masa y radio disponibles,6199,4676
+Sin límites superiores o inferiores,6013,4598
+Solo masa verdadera (pl_bmassprov = Mass),2165,1793
+Radio medido (planeta observado en tránsito),1504,1224
+Con masa estelar,1504,1224
+Con metalicidad,1488,1208
+Con flujo incidente calculado,1488,1208
+Planetas pequeños (1 < Rp < 4),574,385

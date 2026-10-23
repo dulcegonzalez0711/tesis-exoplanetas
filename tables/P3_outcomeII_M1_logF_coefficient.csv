@@ -1,0 +1,2 @@
+model,predictor,coef,IC95_low,IC95_high,p_value
+M1,logF,0.061,0.0214,0.1007,0.0026

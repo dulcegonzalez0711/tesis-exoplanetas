@@ -1,0 +1,38 @@
+﻿variable,descripcion,unidad,tipo,datos_disponibles,datos_faltantes,porcentaje_faltante
+pl_name,Nombre del planeta,,texto,6267,0,0.0
+hostname,Nombre de la estrella anfitriona,,texto,6267,0,0.0
+pl_letter,Letra del planeta,,texto,6267,0,0.0
+sy_snum,Número de estrellas del sistema,,entera,6267,0,0.0
+sy_pnum,Número de planetas del sistema,,entera,6267,0,0.0
+sy_mnum,Número de lunas del sistema,,entera,6267,0,0.0
+cb_flag,Indicador de planeta circumbinario,,entera,6267,0,0.0
+discoverymethod,Método de descubrimiento,,texto,6267,0,0.0
+disc_year,Año de descubrimiento,,entera,6267,0,0.0
+disc_facility,Instalación de descubrimiento,,texto,6267,0,0.0
+rv_flag,Detectado por velocidad radial,,entera,6267,0,0.0
+tran_flag,Detectado por tránsito,,entera,6267,0,0.0
+micro_flag,Detectado por microlente,,entera,6267,0,0.0
+ima_flag,Detectado por imagen directa,,entera,6267,0,0.0
+ttv_flag,Presenta variaciones del tiempo de tránsito,,entera,6267,0,0.0
+pl_controv_flag,Indicador de planeta controversial,,entera,6267,0,0.0
+pl_orbper,Período orbital,días,decimal,5927,340,5.42
+pl_orbsmax,Semieje mayor,au,decimal,5846,421,6.72
+pl_orbeccen,Excentricidad,adimensional,decimal,5225,1042,16.63
+pl_rade,Radio planetario,radios terrestres,decimal,6223,44,0.7
+pl_radelim,Indicador de límite en el radio,,decimal,6223,44,0.7
+pl_bmasse,Masa planetaria (o masa mínima),masas terrestres,decimal,6241,26,0.42
+pl_bmasselim,Indicador de límite en la masa,,decimal,6241,26,0.42
+pl_bmassprov,Procedencia de la masa,,texto,6267,0,0.0
+pl_dens,Densidad planetaria reportada,g/cm^3,decimal,6133,134,2.14
+pl_insol,Flujo incidente reportado,flujo terrestre,decimal,5695,572,9.13
+pl_eqt,Temperatura de equilibrio,K,decimal,5754,513,8.19
+st_spectype,Tipo espectral,,texto,2303,3964,63.25
+st_teff,Temperatura efectiva estelar,K,decimal,5970,297,4.74
+st_rad,Radio estelar,radios solares,decimal,5953,314,5.01
+st_mass,Masa estelar,masas solares,decimal,6260,7,0.11
+st_met,Metalicidad estelar,dex,decimal,5639,628,10.02
+st_metratio,Razón usada para la metalicidad,,texto,5622,645,10.29
+st_lum,Luminosidad estelar,log10(luminosidad solar),decimal,5956,311,4.96
+st_logg,Gravedad superficial estelar,log10(cm/s^2),decimal,5947,320,5.11
+st_age,Edad estelar,Gyr,decimal,4853,1414,22.56
+sy_dist,Distancia,pc,decimal,6240,27,0.43
