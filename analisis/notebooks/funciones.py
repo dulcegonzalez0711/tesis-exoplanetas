@@ -396,6 +396,14 @@ def muestra_zoom(pequenos, muestra="transito", respuesta="sub_neptune_conservado
 # ----------------------------------------------------------------------------
 # 2.5 Análisis II: propiedades físicas de planetas pequeños
 # ----------------------------------------------------------------------------
+def masa_hierro_puro(radio):
+    """Masa (M_Tierra) de un planeta de hierro puro con el radio dado (R_Tierra).
+
+    Usa la relación de Zeng et al. (2016) para CMF = 1: R = 0.86 M^(1/3.7).
+    """
+    return (np.asarray(radio, dtype=float) / 0.86) ** 3.7
+
+
 def muestra_analisis_II(df):
     """Planetas de 1-4 R_Tierra con masa verdadera, radio medido, flujo y estrella.
 
@@ -417,6 +425,8 @@ def muestra_analisis_II(df):
         ("Con flujo incidente calculado", df["log_insol_calculada"].notna()),
         ("Planetas pequeños (1 < Rp < 4)",
          (df["pl_rade"] > R_PEQ_MIN) & (df["pl_rade"] < R_PEQ_MAX)),
+        ("Masa no mayor que la de un planeta de hierro puro (Zeng et al. 2016)",
+         df["pl_bmasse"] <= masa_hierro_puro(df["pl_rade"])),
     ]
     mascara = pd.Series(True, index=df.index)
     filas = []

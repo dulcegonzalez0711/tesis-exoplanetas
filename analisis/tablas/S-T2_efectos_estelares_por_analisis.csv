@@ -9,8 +9,8 @@ I. Regímenes de radio,Mayor que Júpiter vs super-Tierra,RRR,st_mass,8.8797,7.0
 I. Regímenes de radio,Mayor que Júpiter vs super-Tierra,RRR,st_met,0.8853,0.717,1.0932,0.258
 I. Super-Tierras y sub-Neptunos,Sub-Neptuno vs super-Tierra,OR,st_mass,2.6713,2.3344,3.0569,2.77e-46
 I. Super-Tierras y sub-Neptunos,Sub-Neptuno vs super-Tierra,OR,st_met,1.1439,1.0293,1.2713,0.0126
-II. Propiedades físicas,log_Mp,coeficiente [dex],st_mass,0.076,0.0311,0.1209,0.000903
-II. Propiedades físicas,log_Mp,coeficiente [dex],st_met,0.03,-0.0083,0.0683,0.125
+II. Propiedades físicas,log_Mp,coeficiente [dex],st_mass,0.0251,-0.0142,0.0645,0.21
+II. Propiedades físicas,log_Mp,coeficiente [dex],st_met,0.0171,-0.0087,0.0429,0.193
 III. Espaciamiento orbital,log_median_period_ratio,coeficiente [dex],st_mass,-0.0426,-0.064,-0.0212,0.000104
 III. Espaciamiento orbital,log_median_period_ratio,coeficiente [dex],st_met,0.0147,-0.0061,0.0355,0.166
 III. Sistemas gapped,Gapped vs no gapped,OR,st_mass,0.7027,0.5525,0.8936,0.00401

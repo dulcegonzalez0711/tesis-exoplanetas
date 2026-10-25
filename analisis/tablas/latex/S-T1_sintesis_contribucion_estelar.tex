@@ -12,7 +12,7 @@
     \midrule
     I. Regímenes de radio & clase\_radio (5 regímenes) & logístico multinomial & 4\,461 & planetas & $\log P$ & B1: + $M_\star$ + {[Fe/H]} & -1067.5 & pseudo-R2 & +0.0872 & log-loss & -0.1214 & -- \\
     I. Super-Tierras y sub-Neptunos & sub\_neptune\_conservador & logístico binario & 2\,565 & planetas & $\log F$ & M2: + $M_\star$ + {[Fe/H]} + logF x st\_mass & -376.7 & pseudo-R2 & +0.1176 & log-loss & -0.0746 & -0.0730 \\
-    II. Propiedades físicas & $\log M_p$ & lineal con spline & 574 & planetas & $s($$\log R_p$$)$ + $\log F$ & M2: + $M_\star$ + {[Fe/H]} & -15.8 & R2 & +0.0243 & RMSE [dex] & -0.0063 & -0.0043 \\
+    II. Propiedades físicas & $\log M_p$ & lineal con spline & 535 & planetas & $s($$\log R_p$$)$ + $\log F$ & M2: + $M_\star$ + {[Fe/H]} & -1.2 & R2 & +0.0049 & RMSE [dex] & -0.0013 & +0.0003 \\
     III. Espaciamiento orbital & log\_median\_period\_ratio & lineal & 615 & sistemas & $\tilde{R}_p$ + $N_{\rm pl}$ & S1: + $M_\star$ + {[Fe/H]} & -11.3 & R2 & +0.0229 & RMSE [dex] & -0.0031 & -- \\
     III. Sistemas gapped & gapped & logístico binario & 615 & sistemas & $\tilde{R}_p$ + $N_{\rm pl}$ & G1: + $M_\star$ + {[Fe/H]} & -6.3 & pseudo-R2 & +0.0208 & log-loss & -0.0084 & -- \\
     \bottomrule

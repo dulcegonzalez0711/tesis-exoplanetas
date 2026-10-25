@@ -1,5 +1,5 @@
 ﻿analisis,unidad,criterios,N_planetas,N_estrellas
 I. Regímenes de radio,planeta,"Descubiertos por tránsito, con radio, período, masa estelar y metalicidad",4461,3390
 I. Super-Tierras y sub-Neptunos,planeta,"Tránsito, 1-4 R_Tierra excluyendo 1.6-2.0 R_Tierra, con flujo incidente, masa estelar y metalicidad",2565,1981
-II. Propiedades físicas,planeta,"1-4 R_Tierra, masa verdadera y radio medido sin límites, flujo incidente, masa estelar y metalicidad",574,385
+II. Propiedades físicas,planeta,"1-4 R_Tierra, masa verdadera y radio medido sin límites, flujo incidente, masa estelar y metalicidad",535,365
 III. Arquitectura,sistema,"Al menos 2 planetas de 1-4 R_Tierra y P < 100 d, con masa estelar y metalicidad",1513,615

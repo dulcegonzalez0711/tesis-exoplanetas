@@ -13,7 +13,7 @@
 
 - Análisis I: planetas descubiertos por tránsito con radio, período, masa estelar y metalicidad (4461 planetas, 3390 estrellas). Logit multinomial con referencia super-Tierra y predictores estandarizados: B0 = log P; B1 = log P + M★ + [Fe/H].
 - Super-Tierras y sub-Neptunos: tránsito (2565 planetas, 1981 estrellas). Logit con predictores centrados y errores agrupados por estrella: M0 = log F; M1 = + M★ + [Fe/H]; M2 = + log F × M★.
-- Análisis II: 1 < Rp < 4 R⊕, masa verdadera, observado en tránsito, sin límites en masa ni radio (574 planetas, 385 estrellas). Respuesta log Mp con spline de log Rp; errores agrupados por estrella.
+- Análisis II: 1 < Rp < 4 R⊕, masa verdadera, observado en tránsito, sin límites en masa ni radio, y sin planetas más masivos que uno de hierro puro de su radio, M ≤ (Rp/0.86)^3.7 (Zeng et al. 2016) (535 planetas, 365 estrellas). Ese corte quita 39 planetas; con ellos el efecto de M★ sí se distinguía de cero. Respuesta log Mp con spline de log Rp; errores agrupados por estrella.
 - Análisis III: planetas de 1–4 R⊕ con P < 100 d en sistemas con al menos dos de ellos (615 sistemas, 1513 planetas). Las razones de período se calculan solo entre esos planetas; `gapped` = 1 si alguna razón adyacente es mayor que 5.
 - Validación cruzada de 5 pliegues agrupada por estrella. Las medias, desviaciones y nudos de los splines se calculan solo con el conjunto de entrenamiento.
 

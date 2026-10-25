@@ -1,6 +1,6 @@
 ﻿analisis,respuesta,tipo_de_modelo,N,unidad,base,estelar,delta_AIC,medida_de_ajuste,delta_ajuste,medida_de_error,delta_error_muestra,delta_error_vc
 I. Regímenes de radio,clase_radio (5 regímenes),logístico multinomial,4461,planetas,logP,B1: + st_mass + st_met,-1067.4947,pseudo-R2,0.0872,log-loss,-0.1214,
 I. Super-Tierras y sub-Neptunos,sub_neptune_conservador,logístico binario,2565,planetas,logF,M2: + st_mass + st_met + logF x st_mass,-376.7341,pseudo-R2,0.1176,log-loss,-0.0746,-0.073
-II. Propiedades físicas,log_Mp,lineal con spline,574,planetas,s(log_Rp) + logF,M2: + st_mass + st_met,-15.75,R2,0.0243,RMSE [dex],-0.0063,-0.0043
+II. Propiedades físicas,log_Mp,lineal con spline,535,planetas,s(log_Rp) + logF,M2: + st_mass + st_met,-1.2386,R2,0.0049,RMSE [dex],-0.0013,0.0003
 III. Espaciamiento orbital,log_median_period_ratio,lineal,615,sistemas,median_radius + N_planetas,S1: + st_mass + st_met,-11.323,R2,0.0229,RMSE [dex],-0.0031,
 III. Sistemas gapped,gapped,logístico binario,615,sistemas,median_radius + N_planetas,G1: + st_mass + st_met,-6.2816,pseudo-R2,0.0208,log-loss,-0.0084,
