@@ -7,6 +7,15 @@ Código de mi trabajo de graduación (UVG). Comparo la masa y la metalicidad de 
 - `analisis/`: versión final. Notebooks 01 a 09, tablas y figuras del capítulo de resultados.
 - `notebooks/`, `tables/`, `figures/`: primera versión, exploratoria.
 
+Las salidas están etiquetadas de la siguiente manera: 
+- D: descripción del catálogo y de las submuestras (6.1)
+- A1: Análisis I, el modelo multinomial de los cinco regímenes de radio
+- Z: el zoom del Análisis I, super-Tierras contra sub-Neptunos
+- A2: Análisis II, propiedades físicas
+- A3: Análisis III, arquitectura de sistemas
+- S: síntesis
+- C: complementos que van al anexo (por ejemplo, el de pares adyacentes)
+
 ## Cómo correrlo
 
 1. Instalar Anaconda (trae pandas, numpy, scipy, statsmodels, scikit-learn y matplotlib).
